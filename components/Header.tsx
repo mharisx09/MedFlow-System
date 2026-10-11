@@ -30,7 +30,7 @@ export default function Header() {
             alt="Med Flow System logo"
             width={200}
             height={200}
-            className="h-14 w-auto"
+            className="h-16 w-auto"
             priority
           />
         </Link>
