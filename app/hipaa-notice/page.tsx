@@ -1,10 +1,11 @@
 import Reveal from '@/components/Reveal';
-import { siteConfig } from '@/config/site';
+import { siteConfig, siteUrl } from '@/config/site';
 
 export const metadata = {
   title: 'HIPAA Notice | Med Flow System',
   description:
     'Read the Med Flow System notice on protected health information — we do not collect PHI through this website.',
+  alternates: { canonical: `${siteUrl}/hipaa-notice` },
 };
 
 export default function HipaaNoticePage() {

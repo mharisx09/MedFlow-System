@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Reveal from '@/components/Reveal';
-import { blogPosts } from '@/config/site';
+import { blogPosts, siteUrl } from '@/config/site';
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -13,6 +13,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   return {
     title: `${post.title} | Med Flow System Blog`,
     description: post.excerpt,
+    alternates: { canonical: `${siteUrl}/blog/${params.slug}` },
   };
 }
 
@@ -22,8 +23,24 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
   const paragraphs = post.content.split('\n\n').filter((p) => p.trim().length > 0);
 
+  /** Structured article data — helps Google show rich results for blog posts. */
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    author: { '@type': 'Organization', name: 'Med Flow System' },
+    publisher: { '@type': 'Organization', name: 'Med Flow System' },
+    mainEntityOfPage: `${siteUrl}/blog/${post.slug}`,
+  };
+
   return (
     <main className="bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         <Reveal>
           <nav aria-label="Breadcrumb" className="text-base text-ink/60">

@@ -107,8 +107,23 @@ export default async function HomePage() {
     faqs = defaultFaqs;
   }
 
+  /** Structured FAQ data — lets Google show our Q&As directly in search results. */
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: { '@type': 'Answer', text: f.answer },
+    })),
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-mist">
         <div aria-hidden className="pointer-events-none absolute inset-0">

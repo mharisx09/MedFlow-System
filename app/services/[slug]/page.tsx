@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import { CheckCircle2, FileCheck2 } from 'lucide-react';
 import Reveal from '@/components/Reveal';
 import { serviceIcons } from '@/components/icons';
-import { services } from '@/config/site';
+import { services, siteUrl } from '@/config/site';
 
 export function generateStaticParams() {
   return services.map((service) => ({ slug: service.slug }));
@@ -15,6 +15,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   return {
     title: `${service.title} | Med Flow System`,
     description: service.short,
+    alternates: { canonical: `${siteUrl}/services/${params.slug}` },
   };
 }
 

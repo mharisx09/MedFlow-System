@@ -2,12 +2,13 @@ import Link from 'next/link';
 import { Stethoscope } from 'lucide-react';
 import Reveal from '@/components/Reveal';
 import { specialtyIcons } from '@/components/icons';
-import { specialties } from '@/config/site';
+import { specialties, siteUrl } from '@/config/site';
 
 export const metadata = {
   title: 'Specialties We Support | Med Flow System',
   description:
     'Med Flow System provides medical billing and revenue cycle services for primary care, dental, mental health, cardiology, orthopedics, urgent care, and more.',
+  alternates: { canonical: `${siteUrl}/specialties` },
 };
 
 export default function SpecialtiesPage() {

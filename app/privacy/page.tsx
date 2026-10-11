@@ -1,9 +1,10 @@
 import Reveal from '@/components/Reveal';
-import { siteConfig } from '@/config/site';
+import { siteConfig, siteUrl } from '@/config/site';
 
 export const metadata = {
   title: 'Privacy Policy | Med Flow System',
   description: 'Read the Med Flow System privacy policy — how we collect, use, and protect your information.',
+  alternates: { canonical: `${siteUrl}/privacy` },
 };
 
 export default function PrivacyPage() {

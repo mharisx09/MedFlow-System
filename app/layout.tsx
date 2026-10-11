@@ -5,14 +5,13 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCallButton from "@/components/FloatingCallButton";
-import { siteConfig } from "@/config/site";
-
-const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://medflow-system-six.vercel.app").replace(
-  /\/$/,
-  ""
-);
+import { siteConfig, siteUrl } from "@/config/site";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: siteUrl,
+  },
   title: {
     template: "%s | Med Flow System",
     default: "Med Flow System | Medical Billing & Revenue Cycle Management",
@@ -26,12 +25,19 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: "Med Flow System",
     type: "website",
+    images: [
+      {
+        url: `${siteUrl}/images/logo.png`,
+        alt: "Med Flow System — Medical Billing & Revenue Cycle Management",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Med Flow System | Medical Billing & Revenue Cycle Management",
     description:
       "Professional medical billing services and revenue cycle management for US healthcare providers.",
+    images: [`${siteUrl}/images/logo.png`],
   },
 };
 

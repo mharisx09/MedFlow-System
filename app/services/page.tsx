@@ -2,12 +2,13 @@ import Link from 'next/link';
 import { ArrowRight, FileCheck2 } from 'lucide-react';
 import Reveal from '@/components/Reveal';
 import { serviceIcons } from '@/components/icons';
-import { services } from '@/config/site';
+import { services, siteUrl } from '@/config/site';
 
 export const metadata = {
   title: 'Our Services | Med Flow System',
   description:
     'Explore Med Flow System services: medical billing, coding, denial management, eligibility verification, credentialing, prior authorization, and more.',
+  alternates: { canonical: `${siteUrl}/services` },
 };
 
 export default function ServicesPage() {

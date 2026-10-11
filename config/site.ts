@@ -18,6 +18,15 @@ export const siteConfig = {
   linkedin: "https://www.linkedin.com/company/med-flow-system/",
 } as const;
 
+/**
+ * Canonical base URL for the site — used for canonical links, sitemap,
+ * and structured data. Updates automatically when NEXT_PUBLIC_SITE_URL changes.
+ */
+export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || 'https://medflow-system-six.vercel.app').replace(
+  /\/$/,
+  ''
+);
+
 export const navLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },

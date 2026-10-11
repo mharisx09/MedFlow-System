@@ -1,11 +1,12 @@
 import Link from 'next/link';
 import Reveal from '@/components/Reveal';
-import { blogPosts } from '@/config/site';
+import { blogPosts, siteUrl } from '@/config/site';
 
 export const metadata = {
   title: 'Blog | Med Flow System',
   description:
     'Insights from Med Flow System on medical billing, revenue cycle management, coding, and denials for US healthcare providers.',
+  alternates: { canonical: `${siteUrl}/blog` },
 };
 
 export default function BlogPage() {

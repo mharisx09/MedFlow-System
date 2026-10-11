@@ -2,12 +2,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Target, Eye, HeartHandshake, PhoneCall } from 'lucide-react';
 import Reveal from '@/components/Reveal';
-import { siteConfig } from '@/config/site';
+import { siteConfig, siteUrl } from '@/config/site';
 
 export const metadata = {
   title: 'About Us | Med Flow System',
   description:
     'Learn about Med Flow System — our mission, vision, and values as a medical billing and revenue cycle partner for US healthcare providers.',
+  alternates: { canonical: `${siteUrl}/about` },
 };
 
 const values = [
