@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCallButton from "@/components/FloatingCallButton";
 import { siteConfig } from "@/config/site";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://medflow-system-six.vercel.app").replace(
   /\/$/,
@@ -66,7 +65,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <FloatingCallButton />
-        <SpeedInsights />
       </body>
     </html>
   );
