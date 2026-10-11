@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-ink antialiased;
+}
+
+/* Scroll-reveal animation (JS adds .is-visible when the element enters the viewport) */
+.reveal {
+  opacity: 0;
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-up {
+  transform: translateY(24px);
+}
+
+.reveal-scale {
+  transform: scale(0.94);
+}
+
+.reveal-left {
+  transform: translateX(-32px);
+}
+
+.reveal-right {
+  transform: translateX(32px);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .animate-marquee,
+  .animate-float,
+  .animate-blob,
+  .animate-float-slow {
+    animation: none !important;
+  }
+}
+
+/* Infinite marquee ticker */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-mask {
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+/* Gentle floating for chips and badges */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float 7s ease-in-out infinite;
+  animation-delay: 1.2s;
+}
+
+/* Slow drifting background blobs */
+@keyframes blob {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(24px, -30px) scale(1.08);
+  }
+  66% {
+    transform: translate(-20px, 18px) scale(0.94);
+  }
+}
+
+.animate-blob {
+  animation: blob 14s ease-in-out infinite;
+}
+
+::selection {
+  background: #119b9b;
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid #119b9b;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Accordion expand/collapse */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease-in-out;
+}
