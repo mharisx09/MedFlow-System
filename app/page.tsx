@@ -241,9 +241,6 @@ export default async function HomePage() {
               />
             ))}
           </div>
-          <p className="mt-8 text-center text-sm text-white/60">
-            Sample metrics, replace with your real numbers.
-          </p>
         </div>
       </section>
 
