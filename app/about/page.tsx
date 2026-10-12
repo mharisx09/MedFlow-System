@@ -125,7 +125,7 @@ export default function AboutPage() {
             <div className="grid gap-4">
               <div className="relative aspect-[16/9] overflow-hidden rounded-2xl shadow-lg">
                 <Image
-                  src="/images/consult.jpg"
+                  src="/images/consult.webp"
                   alt="Team consulting on billing strategy"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -134,7 +134,7 @@ export default function AboutPage() {
               </div>
               <div className="relative aspect-[16/9] overflow-hidden rounded-2xl shadow-lg">
                 <Image
-                  src="/images/care.jpg"
+                  src="/images/care.webp"
                   alt="Care team focused on patients"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"

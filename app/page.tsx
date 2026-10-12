@@ -134,7 +134,7 @@ export default async function HomePage() {
           />
         </div>
         <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-24">
-          <Reveal>
+          <>
             <h1 className="text-4xl font-extrabold leading-tight text-ink sm:text-5xl">
               Medical billing that keeps your revenue flowing
             </h1>
@@ -156,11 +156,10 @@ export default async function HomePage() {
                 Our Services
               </Link>
             </div>
-          </Reveal>
-          <Reveal delay={120} variant="scale">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
+          </>
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src="/images/hero.jpg"
+                src="/images/hero.webp"
                 alt="Healthcare team working together"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -176,7 +175,6 @@ export default async function HomePage() {
                 <span className="text-sm font-bold text-ink">Denials worked daily</span>
               </div>
             </div>
-          </Reveal>
         </div>
       </section>
 
@@ -285,7 +283,7 @@ export default async function HomePage() {
           <Reveal variant="left">
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src="/images/doctors.jpg"
+                src="/images/doctors.webp"
                 alt="Physicians reviewing patient care together"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -409,7 +407,7 @@ export default async function HomePage() {
           <Reveal>
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src="/images/dashboard.jpg"
+                src="/images/dashboard.webp"
                 alt="Billing performance dashboard"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
