@@ -74,3 +74,28 @@ export async function PATCH(req: Request) {
 
   return NextResponse.json({ ok: true });
 }
+
+export async function DELETE(req: Request) {
+  try {
+    await requireAdmin();
+  } catch (res) {
+    if (res instanceof Response) return res;
+    throw res;
+  }
+
+  let body: { id?: unknown };
+  try {
+    body = await req.json();
+  } catch {
+    return NextResponse.json({ error: 'Invalid request body.' }, { status: 400 });
+  }
+
+  const { id } = body;
+  if (typeof id !== 'string' || id.trim() === '') {
+    return NextResponse.json({ error: 'Lead id is required.' }, { status: 400 });
+  }
+
+  await prisma.lead.delete({ where: { id } });
+
+  return NextResponse.json({ ok: true });
+}

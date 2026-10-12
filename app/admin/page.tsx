@@ -186,6 +186,23 @@ export default function AdminDashboardPage() {
     }
   }
 
+  async function deleteLead(id: string) {
+    if (!window.confirm('Delete this lead permanently?')) return;
+    try {
+      const res = await fetch('/api/admin/leads', {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id }),
+      });
+      if (handleUnauthorized(res)) return;
+      if (res.ok) {
+        setLeads((prev) => prev.filter((l) => l.id !== id));
+      }
+    } catch {
+      // leave list unchanged on error
+    }
+  }
+
   function exportCsv() {
     const params = new URLSearchParams();
     if (search.trim()) params.set('search', search.trim());
@@ -413,7 +430,7 @@ export default function AdminDashboardPage() {
                 <table className="min-w-full divide-y divide-slate-200 text-sm">
                   <thead className="bg-slate-50">
                     <tr>
-                      {['Date', 'Name', 'Email', 'Phone', 'Type', 'Practice', 'Status', 'Message'].map(
+                      {['Date', 'Name', 'Email', 'Phone', 'Type', 'Practice', 'Status', 'Message', ''].map(
                         (h) => (
                           <th
                             key={h}
@@ -454,6 +471,15 @@ export default function AdminDashboardPage() {
                           title={lead.message ?? ''}
                         >
                           {lead.message ?? '—'}
+                        </td>
+                        <td className="px-4 py-2.5">
+                          <button
+                            type="button"
+                            onClick={() => deleteLead(lead.id)}
+                            className="rounded-md px-2 py-1 text-sm font-medium text-red-600 hover:bg-red-50"
+                          >
+                            Delete
+                          </button>
                         </td>
                       </tr>
                     ))}
