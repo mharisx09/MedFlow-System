@@ -12,7 +12,7 @@ export default function Testimonials() {
           Trusted by practices like yours
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-ink/70">
-          Real partnerships, real results — here&apos;s what practice owners and managers
+          Real partnerships, real results, here&apos;s what practice owners and managers
           say about working with us.
         </p>
       </Reveal>

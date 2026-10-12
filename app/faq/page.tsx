@@ -24,7 +24,7 @@ export default async function FaqPage() {
     faqs = defaultFaqs;
   }
 
-  /** Structured FAQ data — lets Google show our Q&As directly in search results. */
+  /** Structured FAQ data, lets Google show our Q&As directly in search results. */
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',

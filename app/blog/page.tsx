@@ -20,7 +20,7 @@ export default function BlogPage() {
               Billing insights for your practice
             </h1>
             <p className="mt-5 max-w-3xl text-lg text-ink/75">
-              Practical notes on medical billing, coding, denials, and the revenue cycle —
+              Practical notes on medical billing, coding, denials, and the revenue cycle,
               written for busy practice owners and staff.
             </p>
           </Reveal>

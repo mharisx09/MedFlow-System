@@ -17,18 +17,18 @@ export const metadata: Metadata = {
     default: "Med Flow System | Medical Billing & Revenue Cycle Management",
   },
   description:
-    "Med Flow System provides professional medical billing services and revenue cycle management for US healthcare providers — cleaner claims, faster reimbursements, and less administrative burden.",
+    "Med Flow System provides professional medical billing services and revenue cycle management for US healthcare providers, cleaner claims, faster reimbursements, and less administrative burden.",
   openGraph: {
     title: "Med Flow System | Medical Billing & Revenue Cycle Management",
     description:
-      "Professional medical billing services and revenue cycle management for US healthcare providers — cleaner claims, faster reimbursements, less admin burden.",
+      "Professional medical billing services and revenue cycle management for US healthcare providers, cleaner claims, faster reimbursements, less admin burden.",
     url: siteUrl,
     siteName: "Med Flow System",
     type: "website",
     images: [
       {
         url: `${siteUrl}/images/logo.png`,
-        alt: "Med Flow System — Medical Billing & Revenue Cycle Management",
+        alt: "Med Flow System, Medical Billing & Revenue Cycle Management",
       },
     ],
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
 };
 
-/** Structured business data — helps Google show rich results (name, phone, location). */
+/** Structured business data, helps Google show rich results (name, phone, location). */
 const businessSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",

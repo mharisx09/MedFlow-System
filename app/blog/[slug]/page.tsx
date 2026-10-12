@@ -23,7 +23,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
   const paragraphs = post.content.split('\n\n').filter((p) => p.trim().length > 0);
 
-  /** Structured article data — helps Google show rich results for blog posts. */
+  /** Structured article data, helps Google show rich results for blog posts. */
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',

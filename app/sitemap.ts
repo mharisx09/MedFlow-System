@@ -7,7 +7,7 @@ const baseUrl = (process.env.NEXT_PUBLIC_SITE_URL || 'https://medflow-system-six
 );
 
 /**
- * Auto-generated sitemap — helps Google discover and index every page.
+ * Auto-generated sitemap, helps Google discover and index every page.
  * Updates itself when services or blog posts are added.
  */
 export default function sitemap(): MetadataRoute.Sitemap {

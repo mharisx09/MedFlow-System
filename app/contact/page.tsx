@@ -6,7 +6,7 @@ import { siteUrl } from '@/config/site';
 export const metadata = {
   title: 'Contact Us | Med Flow System',
   description:
-    'Get in touch with Med Flow System — book a free consultation, request a billing audit, or send us a message about your practice.',
+    'Get in touch with Med Flow System, book a free consultation, request a billing audit, or send us a message about your practice.',
   alternates: { canonical: `${siteUrl}/contact` },
 };
 

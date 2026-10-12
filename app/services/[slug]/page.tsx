@@ -101,7 +101,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
               Want help with {service.title.toLowerCase()}?
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-white/85">
-              Talk to our team about how this service fits your practice — or start with a
+              Talk to our team about how this service fits your practice, or start with a
               free billing audit.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">

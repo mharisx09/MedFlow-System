@@ -2,15 +2,15 @@
  * Single source of truth for site content and contact details.
  *
  * Editable content lives here. Placeholder/sample data is flagged clearly
- * with comments — replace those values before publishing.
+ * with comments, replace those values before publishing.
  */
 
 export const siteConfig = {
   name: "Med Flow System",
-  tagline: "Seamless clinical workflows — smarter connections, smoother care.",
+  tagline: "Seamless clinical workflows, smarter connections, smoother care.",
   phone: "+1 (213) 890-6560",
   phoneHref: "tel:+12138906560",
-  // PLACEHOLDER email — confirm the real mailbox before publishing.
+  // PLACEHOLDER email, confirm the real mailbox before publishing.
   email: "info@medflowsystem.co",
   address: "Pittsburgh, PA",
   city: "Pittsburgh, Pennsylvania",
@@ -19,7 +19,7 @@ export const siteConfig = {
 } as const;
 
 /**
- * Canonical base URL for the site — used for canonical links, sitemap,
+ * Canonical base URL for the site, used for canonical links, sitemap,
  * and structured data. Updates automatically when NEXT_PUBLIC_SITE_URL changes.
  */
 export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || 'https://medflow-system-six.vercel.app').replace(
@@ -125,14 +125,14 @@ export const services: Service[] = [
     slug: "advanced-eligibility-verification",
     title: "Advanced Eligibility Verification",
     short:
-      "Multi-touch eligibility checks that catch what basic verification misses — before it costs you.",
+      "Multi-touch eligibility checks that catch what basic verification misses, before it costs you.",
     description: [
       "Basic eligibility checks confirm a policy is active. Advanced eligibility goes further: we re-verify coverage at multiple points before the visit, uncover secondary and tertiary coverage that standard checks miss, and analyze out-of-network benefits so every patient encounter is financially cleared before it happens.",
-      "For practices with high-value procedures, recurring visits, or complex payer mixes, this deeper layer of verification prevents the eligibility denials that slip through standard checks — protecting revenue on the encounters that matter most.",
+      "For practices with high-value procedures, recurring visits, or complex payer mixes, this deeper layer of verification prevents the eligibility denials that slip through standard checks, protecting revenue on the encounters that matter most.",
     ],
     benefits: [
-      "Multiple verification touches before each visit — 7-day, 72-hour, and 24-hour checks",
-      "Coordination of benefits discovery — we find secondary coverage others miss",
+      "Multiple verification touches before each visit, 7-day, 72-hour, and 24-hour checks",
+      "Coordination of benefits discovery, we find secondary coverage others miss",
       "Out-of-network benefit analysis with accurate patient cost estimates",
       "Ongoing eligibility monitoring for recurring and long-term patients",
       "Fewer eligibility denials on high-value procedures",
@@ -140,7 +140,7 @@ export const services: Service[] = [
     steps: [
       {
         title: "Deep coverage analysis",
-        text: "Beyond active or inactive — we verify plan details, network status, and benefit limits in depth.",
+        text: "Beyond active or inactive, we verify plan details, network status, and benefit limits in depth.",
       },
       {
         title: "COB discovery",
@@ -162,7 +162,7 @@ export const services: Service[] = [
     short:
       "Persistent, professional follow-up on unpaid claims to recover revenue stuck in AR.",
     description: [
-      "Claims that sit in accounts receivable cost your practice money every day they go unresolved. We work your AR aging systematically — contacting payers, resolving holds, correcting errors, and re-billing when needed until every claim is paid or properly resolved.",
+      "Claims that sit in accounts receivable cost your practice money every day they go unresolved. We work your AR aging systematically, contacting payers, resolving holds, correcting errors, and re-billing when needed until every claim is paid or properly resolved.",
       "Our follow-up process prioritizes high-value and aging claims first, so your oldest dollars get attention quickly. You see measurable movement in your AR days and a steady reduction in write-offs.",
     ],
     benefits: [
@@ -197,7 +197,7 @@ export const services: Service[] = [
     short:
       "Turn denied claims into paid claims with root-cause analysis and strong appeals.",
     description: [
-      "Every denial is revenue waiting to be recovered. We investigate each denial to find the root cause — coding errors, missing documentation, medical necessity questions, or payer mistakes — and fix the underlying issue, not just the symptom.",
+      "Every denial is revenue waiting to be recovered. We investigate each denial to find the root cause, coding errors, missing documentation, medical necessity questions, or payer mistakes, and fix the underlying issue, not just the symptom.",
       "For denials worth fighting, we prepare and submit thorough appeals with the right clinical documentation and payer-specific language. We also track denial patterns so we can help you prevent the same denials from happening again.",
     ],
     benefits: [
@@ -267,7 +267,7 @@ export const services: Service[] = [
     short:
       "Get credentialed and enrolled with payers faster, with deadlines tracked for you.",
     description: [
-      "Credentialing delays can keep a provider from billing for months. We manage the full credentialing and enrollment process — gathering documents, completing applications, following up with payers, and tracking every deadline — so your providers can start seeing patients and billing sooner.",
+      "Credentialing delays can keep a provider from billing for months. We manage the full credentialing and enrollment process, gathering documents, completing applications, following up with payers, and tracking every deadline, so your providers can start seeing patients and billing sooner.",
       "We also monitor re-credentialing dates and payer requirements on an ongoing basis, so your participation status never lapses unexpectedly.",
     ],
     benefits: [
@@ -302,7 +302,7 @@ export const services: Service[] = [
     short:
       "Authorizations obtained before care is delivered, so services don't get denied.",
     description: [
-      "Prior authorization requirements keep growing, and missed authorizations mean denied claims and delayed care. We handle the authorization process end to end — checking requirements, submitting requests with clinical documentation, and following up until a decision is reached.",
+      "Prior authorization requirements keep growing, and missed authorizations mean denied claims and delayed care. We handle the authorization process end to end, checking requirements, submitting requests with clinical documentation, and following up until a decision is reached.",
       "By securing authorizations before the service date, we help your patients get timely care and your practice get paid without the back-and-forth of retroactive appeals.",
     ],
     benefits: [
@@ -342,7 +342,7 @@ export const services: Service[] = [
       "Clear, professional patient statements and support that get balances paid.",
     description: [
       "Patient balances are a growing share of practice revenue, but confusing statements and poor follow-up leave money uncollected. We produce clear, easy-to-understand statements and handle patient billing inquiries with professionalism and patience.",
-      "Our process keeps patients informed at every step — from the first statement through gentle reminders — which improves collection rates while protecting your practice's reputation and patient relationships.",
+      "Our process keeps patients informed at every step, from the first statement through gentle reminders, which improves collection rates while protecting your practice's reputation and patient relationships.",
     ],
     benefits: [
       "Clear, easy-to-read patient statements",
@@ -415,13 +415,13 @@ export const specialties: Specialty[] = [
   },
   {
     name: "More Specialties",
-    blurb: "We support many other specialties — ask us about yours.",
+    blurb: "We support many other specialties, ask us about yours.",
   },
 ];
 
 /**
  * Systems the team works with. Present these as chips labeled as systems the
- * team works with — page copy must add "We adapt to your EHR and practice
+ * team works with, page copy must add "We adapt to your EHR and practice
  * management system." (We make no claim of official partnership with vendors.)
  */
 export const softwareList = [
@@ -450,7 +450,7 @@ export const defaultFaqs: FaqItem[] = [
   {
     question: "How does your pricing work?",
     answer:
-      "Our pricing is based on a percentage of the collections we help you recover, so our success is directly tied to yours. The exact rate depends on your specialty, claim volume, and the services you need. Contact us for a custom quote — there are no long-term contracts required to get started.",
+      "Our pricing is based on a percentage of the collections we help you recover, so our success is directly tied to yours. The exact rate depends on your specialty, claim volume, and the services you need. Contact us for a custom quote, there are no long-term contracts required to get started.",
   },
   {
     question: "How does onboarding work?",
@@ -465,7 +465,7 @@ export const defaultFaqs: FaqItem[] = [
   {
     question: "Will I lose visibility into my billing?",
     answer:
-      "No — the opposite. You receive regular, easy-to-read reports on claims, payments, denials, and accounts receivable, and you can reach our team any time with questions. Many practices tell us they have better visibility working with us than they did handling billing in-house.",
+      "No, the opposite. You receive regular, easy-to-read reports on claims, payments, denials, and accounts receivable, and you can reach our team any time with questions. Many practices tell us they have better visibility working with us than they did handling billing in-house.",
   },
   {
     question: "What if I only need help with one part of billing?",
@@ -483,32 +483,32 @@ export interface PlaceholderStat {
 
 /**
  * SAMPLE numbers for layout design only.
- * EDITABLE PLACEHOLDER — replace with real numbers before publishing.
+ * EDITABLE PLACEHOLDER, replace with real numbers before publishing.
  */
 export const placeholderStats: PlaceholderStat[] = [
   {
     value: 98,
     suffix: "%",
     label: "Clean claim rate",
-    note: "EDITABLE PLACEHOLDER — replace with real numbers before publishing",
+    note: "EDITABLE PLACEHOLDER, replace with real numbers before publishing",
   },
   {
     value: 24,
     suffix: "/7",
     label: "Dedicated support availability",
-    note: "EDITABLE PLACEHOLDER — replace with real numbers before publishing",
+    note: "EDITABLE PLACEHOLDER, replace with real numbers before publishing",
   },
   {
     value: 30,
     suffix: "+",
     label: "Days shaved off average AR (sample)",
-    note: "EDITABLE PLACEHOLDER — replace with real numbers before publishing",
+    note: "EDITABLE PLACEHOLDER, replace with real numbers before publishing",
   },
   {
     value: 100,
     suffix: "%",
     label: "HIPAA-compliant workflows",
-    note: "EDITABLE PLACEHOLDER — replace with real numbers before publishing",
+    note: "EDITABLE PLACEHOLDER, replace with real numbers before publishing",
   },
 ];
 
@@ -522,7 +522,7 @@ export interface BlogPost {
 }
 
 /**
- * Published blog articles — real educational content for practice owners.
+ * Published blog articles, real educational content for practice owners.
  * Manage posts (create/edit) from the admin dashboard; these are the defaults.
  */
 export const blogPosts: BlogPost[] = [
@@ -531,13 +531,13 @@ export const blogPosts: BlogPost[] = [
     title: "Denial Management Tips for Medical Practices",
     excerpt:
       "Denied claims drain revenue, yet most are preventable. Learn how to track denial patterns, appeal faster, and fix the front-end processes that cause them.",
-    content: `Denied claims are one of the biggest drains on a practice's revenue, yet many are preventable. The first step is tracking: if you don't categorize denials by reason, you can't fix the patterns behind them. Build a simple monthly report that groups denials by cause — eligibility, coding, authorization, medical necessity — and you'll quickly see where your effort belongs.
+    content: `Denied claims are one of the biggest drains on a practice's revenue, yet many are preventable. The first step is tracking: if you don't categorize denials by reason, you can't fix the patterns behind them. Build a simple monthly report that groups denials by cause, eligibility, coding, authorization, medical necessity, and you'll quickly see where your effort belongs.
 
 The second step is speed. Denials have appeal deadlines, and every day a denial sits untouched is a day closer to losing the revenue permanently. Assign ownership of denials so each one has a person responsible for working it to resolution, and set clear turnaround targets.
 
 Third, fix the front end. Most denials are born upstream: wrong patient demographics, unverified eligibility, or missing authorizations. Strengthening registration and verification processes prevents far more denials than even the best appeals team can recover.
 
-Finally, treat every appeal as a case worth making. Well-documented appeals that reference the payer's own policies and include complete clinical documentation win far more often than template letters. Track your appeal success rate by payer — it tells you where appeals pay off and where process changes are needed instead.
+Finally, treat every appeal as a case worth making. Well-documented appeals that reference the payer's own policies and include complete clinical documentation win far more often than template letters. Track your appeal success rate by payer, it tells you where appeals pay off and where process changes are needed instead.
 
 If your team doesn't have the bandwidth to work denials systematically, that's exactly where a dedicated billing partner earns its keep.`,
     date: "2026-09-15",
@@ -548,15 +548,15 @@ If your team doesn't have the bandwidth to work denials systematically, that's e
     title: "AR Follow-Up Best Practices for Steady Cash Flow",
     excerpt:
       "Disciplined AR follow-up is the highest-return activity in revenue cycle management. Here is how to segment, document, and work your aging buckets.",
-    content: `Accounts receivable is the pulse of your practice's financial health. The goal is simple: keep AR days low and make sure every dollar of earned revenue is actually collected. That requires a disciplined, repeatable follow-up process — not occasional cleanup sprints.
+    content: `Accounts receivable is the pulse of your practice's financial health. The goal is simple: keep AR days low and make sure every dollar of earned revenue is actually collected. That requires a disciplined, repeatable follow-up process, not occasional cleanup sprints.
 
 Start by segmenting your AR. High-value and aging claims deserve attention first, so work your aging buckets in priority order rather than randomly. A claim that is 120 days old needs a different strategy than one that is 30 days old, and knowing the difference is what separates good follow-up from busywork.
 
 Second, document everything. Every payer call, every reference number, every promise of payment should be logged. When a claim comes back unpaid again, that history is what lets you escalate effectively instead of starting from zero.
 
-Third, set a cadence and stick to it. Payer follow-up works best on a schedule — claims touched every 7 to 14 days move; claims touched once and forgotten don't. Build the cadence into your weekly workflow and measure it like any other operational metric.
+Third, set a cadence and stick to it. Payer follow-up works best on a schedule, claims touched every 7 to 14 days move; claims touched once and forgotten don't. Build the cadence into your weekly workflow and measure it like any other operational metric.
 
-Fourth, close the loop on root causes. If the same payer keeps stalling the same type of claim, the fix isn't more follow-up — it's a process change upstream, whether that's better documentation, a different coding approach, or a corrected enrollment.
+Fourth, close the loop on root causes. If the same payer keeps stalling the same type of claim, the fix isn't more follow-up, it's a process change upstream, whether that's better documentation, a different coding approach, or a corrected enrollment.
 
 Consistent AR follow-up is one of the highest-return activities in revenue cycle management, and it's also one of the first things to slip when staff are stretched thin.`,
     date: "2026-09-01",
@@ -569,11 +569,11 @@ Consistent AR follow-up is one of the highest-return activities in revenue cycle
       "Choosing a billing partner is a multi-year decision. Evaluate specialty experience, transparency, pricing, denial workflows, and the transition plan.",
     content: `Choosing a billing partner is a decision you'll live with for years, so it's worth evaluating carefully. The first thing to look for is specialty experience: billing rules vary enormously between specialties, and a partner who knows yours will spot problems a generalist misses.
 
-Second, ask about transparency. You should receive regular reports on claims, payments, denials, and AR — and you should be able to reach a real person who knows your account. If a billing company can't clearly explain what they're doing with your revenue cycle, keep looking.
+Second, ask about transparency. You should receive regular reports on claims, payments, denials, and AR, and you should be able to reach a real person who knows your account. If a billing company can't clearly explain what they're doing with your revenue cycle, keep looking.
 
 Third, understand the pricing model and what's included. Percentage-of-collections pricing aligns incentives, but make sure you know exactly which services are covered, whether there are setup fees or minimums, and how contract terms and termination work.
 
-Fourth, ask about their process for denials and AR follow-up. This is where the real value lives. A partner should be able to describe their denial workflow, their follow-up cadence, and how they report results — in concrete terms, not vague promises.
+Fourth, ask about their process for denials and AR follow-up. This is where the real value lives. A partner should be able to describe their denial workflow, their follow-up cadence, and how they report results, in concrete terms, not vague promises.
 
 Finally, check the transition plan. A good partner runs in parallel with your existing process during onboarding so nothing falls through the cracks, and they should be able to tell you exactly what they'll need from your team and when.
 

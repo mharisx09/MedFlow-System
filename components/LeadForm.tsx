@@ -63,7 +63,7 @@ export default function LeadForm({ type, compact = false }: LeadFormProps) {
   if (status === 'success') {
     return (
       <div className="rounded-xl border border-green-200 bg-green-50 p-6" role="status">
-        <h3 className="text-lg font-bold text-green-800">Thank you — we received your request.</h3>
+        <h3 className="text-lg font-bold text-green-800">Thank you, we received your request.</h3>
         <p className="mt-2 text-base text-green-800">
           Someone from our team will reach out to you shortly. We look forward to talking through
           how Med Flow System can support your practice.

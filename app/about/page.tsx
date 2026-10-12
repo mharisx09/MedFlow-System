@@ -7,7 +7,7 @@ import { siteConfig, siteUrl } from '@/config/site';
 export const metadata = {
   title: 'About Us | Med Flow System',
   description:
-    'Learn about Med Flow System — our mission, vision, and values as a medical billing and revenue cycle partner for US healthcare providers.',
+    'Learn about Med Flow System, our mission, vision, and values as a medical billing and revenue cycle partner for US healthcare providers.',
   alternates: { canonical: `${siteUrl}/about` },
 };
 
@@ -15,7 +15,7 @@ const values = [
   {
     icon: Target,
     title: 'Accuracy',
-    text: 'Every claim coded carefully and checked twice. Small errors cost practices real money — we make sure they do not happen on our watch.',
+    text: 'Every claim coded carefully and checked twice. Small errors cost practices real money, we make sure they do not happen on our watch.',
   },
   {
     icon: Eye,
@@ -46,7 +46,7 @@ export default function AboutPage() {
             </h1>
             <p className="mt-5 max-w-3xl text-lg text-ink/75">
               Med Flow System exists for one reason: to keep the money flowing behind the care.
-              We handle the claims, the coding, the denials, and the follow-up — so practices
+              We handle the claims, the coding, the denials, and the follow-up, so practices
               can stay focused on patients instead of paperwork.
             </p>
           </Reveal>
@@ -59,7 +59,7 @@ export default function AboutPage() {
             <div className="h-full rounded-2xl border border-mist bg-mist/60 p-8">
               <h2 className="text-2xl font-extrabold text-ink">Our mission</h2>
               <p className="mt-3 text-base leading-relaxed text-ink/75">
-                To give every healthcare provider — from solo practices to growing clinics — a
+                To give every healthcare provider, from solo practices to growing clinics, a
                 billing operation that is accurate, transparent, and dependable. When billing
                 runs smoothly, practices get paid faster, staff spend less time on admin, and
                 patients get better care.
@@ -71,7 +71,7 @@ export default function AboutPage() {
               <h2 className="text-2xl font-extrabold text-ink">Our vision</h2>
               <p className="mt-3 text-base leading-relaxed text-ink/75">
                 A future where no practice loses revenue to preventable billing problems. We
-                want to be the team providers trust with their revenue cycle — the partner
+                want to be the team providers trust with their revenue cycle, the partner
                 they recommend to colleagues because we simply get it done right.
               </p>
             </div>
@@ -110,14 +110,14 @@ export default function AboutPage() {
               A team approach to your revenue cycle
             </h2>
             <p className="mt-4 text-base leading-relaxed text-ink/75">
-              Billing touches everything in a practice — scheduling, documentation, coding,
+              Billing touches everything in a practice, scheduling, documentation, coding,
               payer contracts. That is why we work as an extension of your team, not a black
               box. We coordinate with your front desk and providers, flag documentation gaps
               early, and keep everyone in the loop with regular updates.
             </p>
             <p className="mt-4 text-base leading-relaxed text-ink/75">
               You always know who is handling your account and what is happening with your
-              claims. No runarounds, no jargon — just steady, professional work on your
+              claims. No runarounds, no jargon, just steady, professional work on your
               revenue cycle.
             </p>
           </Reveal>
@@ -168,7 +168,7 @@ export default function AboutPage() {
               Let&apos;s talk about your practice
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-white/85">
-              Find out what Med Flow System can do for your revenue cycle — starting with a
+              Find out what Med Flow System can do for your revenue cycle, starting with a
               free consultation.
             </p>
             <div className="mt-8">

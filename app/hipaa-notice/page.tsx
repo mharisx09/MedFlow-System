@@ -4,7 +4,7 @@ import { siteConfig, siteUrl } from '@/config/site';
 export const metadata = {
   title: 'HIPAA Notice | Med Flow System',
   description:
-    'Read the Med Flow System notice on protected health information — we do not collect PHI through this website.',
+    'Read the Med Flow System notice on protected health information, we do not collect PHI through this website.',
   alternates: { canonical: `${siteUrl}/hipaa-notice` },
 };
 
@@ -23,7 +23,7 @@ export default function HipaaNoticePage() {
             <h2 className="text-xl font-bold text-ink">We do not collect patient information here</h2>
             <p className="mt-2 text-base leading-relaxed text-ink/75">
               This website is for general information and business inquiries only. It is not
-              designed to receive protected health information (PHI) — such as patient names,
+              designed to receive protected health information (PHI), such as patient names,
               diagnoses, treatment details, or insurance ID numbers.
             </p>
             <p className="mt-3 text-base leading-relaxed text-ink/75">
@@ -46,8 +46,8 @@ export default function HipaaNoticePage() {
           <section>
             <h2 className="text-xl font-bold text-ink">Questions about privacy</h2>
             <p className="mt-2 text-base leading-relaxed text-ink/75">
-              If you have questions about how we handle information — or if you believe you may
-              have sent sensitive information through this site by mistake — please contact us
+              If you have questions about how we handle information, or if you believe you may
+              have sent sensitive information through this site by mistake, please contact us
               right away:
             </p>
             <ul className="mt-3 space-y-2 text-base text-ink/75">

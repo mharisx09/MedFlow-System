@@ -63,7 +63,7 @@ const benefits = [
   {
     icon: Stethoscope,
     title: 'Built for your specialty',
-    text: 'Workflows tuned to your field — from primary care to dental to behavioral health.',
+    text: 'Workflows tuned to your field, from primary care to dental to behavioral health.',
   },
   {
     icon: BarChart3,
@@ -109,7 +109,7 @@ export default async function HomePage() {
               Medical billing that keeps your revenue flowing
             </h1>
             <p className="mt-5 max-w-xl text-lg text-ink/75">
-              Med Flow System handles your billing, coding, and insurance follow-up end to end —
+              Med Flow System handles your billing, coding, and insurance follow-up end to end,
               so your practice gets paid faster and you get back to patient care.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
@@ -192,7 +192,7 @@ export default async function HomePage() {
           <Reveal className="text-center">
             <h2 className="text-3xl font-extrabold text-ink sm:text-4xl">Our services</h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-ink/70">
-              Full revenue cycle support — pick one service or hand us the whole process.
+              Full revenue cycle support, pick one service or hand us the whole process.
             </p>
           </Reveal>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -242,7 +242,7 @@ export default async function HomePage() {
             ))}
           </div>
           <p className="mt-8 text-center text-sm text-white/60">
-            Sample metrics — replace with your real numbers.
+            Sample metrics, replace with your real numbers.
           </p>
         </div>
       </section>
@@ -353,7 +353,7 @@ export default async function HomePage() {
           <Reveal>
             <h2 className="text-3xl font-extrabold text-ink sm:text-4xl">Software we work with</h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-ink/70">
-              We adapt to your EHR and practice management system — no painful migrations required.
+              We adapt to your EHR and practice management system, no painful migrations required.
             </p>
           </Reveal>
           <Reveal delay={100}>
@@ -389,7 +389,7 @@ export default async function HomePage() {
             <h2 className="text-3xl font-extrabold text-ink sm:text-4xl">Get a free billing audit</h2>
             <p className="mt-4 text-lg text-ink/70">
               Not sure where your revenue is leaking? We will review your recent claims, denials,
-              and AR — free, with no obligation — and show you exactly what could improve.
+              and AR, free, with no obligation, and show you exactly what could improve.
             </p>
             <div className="mt-8 rounded-2xl border border-mist bg-mist/60 p-6 sm:p-8">
               <LeadForm type="audit" compact />
@@ -413,7 +413,7 @@ export default async function HomePage() {
               Ready to fix your revenue cycle?
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-white/85">
-              Talk to our team today — or call us at{' '}
+              Talk to our team today, or call us at{' '}
               <a href={siteConfig.phoneHref} className="font-bold text-white underline">
                 {siteConfig.phone}
               </a>

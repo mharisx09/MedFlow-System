@@ -24,7 +24,7 @@ export default function SpecialtiesPage() {
               Billing expertise for your specialty
             </h1>
             <p className="mt-5 max-w-3xl text-lg text-ink/75">
-              Every specialty bills differently — different codes, different payer rules,
+              Every specialty bills differently, different codes, different payer rules,
               different denial patterns. Our team understands those differences and builds
               workflows around them.
             </p>
@@ -58,7 +58,7 @@ export default function SpecialtiesPage() {
               </h2>
               <p className="mx-auto mt-3 max-w-2xl text-base text-ink/70">
                 We work with practices across many fields of care. If your specialty is not
-                listed here, reach out — chances are we can support you, and we will be
+                listed here, reach out, chances are we can support you, and we will be
                 upfront if we can&apos;t.
               </p>
               <div className="mt-6">
