@@ -122,6 +122,41 @@ export const services: Service[] = [
     ],
   },
   {
+    slug: "advanced-eligibility-verification",
+    title: "Advanced Eligibility Verification",
+    short:
+      "Multi-touch eligibility checks that catch what basic verification misses — before it costs you.",
+    description: [
+      "Basic eligibility checks confirm a policy is active. Advanced eligibility goes further: we re-verify coverage at multiple points before the visit, uncover secondary and tertiary coverage that standard checks miss, and analyze out-of-network benefits so every patient encounter is financially cleared before it happens.",
+      "For practices with high-value procedures, recurring visits, or complex payer mixes, this deeper layer of verification prevents the eligibility denials that slip through standard checks — protecting revenue on the encounters that matter most.",
+    ],
+    benefits: [
+      "Multiple verification touches before each visit — 7-day, 72-hour, and 24-hour checks",
+      "Coordination of benefits discovery — we find secondary coverage others miss",
+      "Out-of-network benefit analysis with accurate patient cost estimates",
+      "Ongoing eligibility monitoring for recurring and long-term patients",
+      "Fewer eligibility denials on high-value procedures",
+    ],
+    steps: [
+      {
+        title: "Deep coverage analysis",
+        text: "Beyond active or inactive — we verify plan details, network status, and benefit limits in depth.",
+      },
+      {
+        title: "COB discovery",
+        text: "We search for secondary and tertiary coverage so claims go to the right payer the first time.",
+      },
+      {
+        title: "Multi-touch re-verification",
+        text: "Coverage is re-checked at set intervals before the visit to catch last-minute changes.",
+      },
+      {
+        title: "Financial clearance report",
+        text: "Your team gets a clear go or no-go with patient responsibility confirmed before the appointment.",
+      },
+    ],
+  },
+  {
     slug: "accounts-receivable-follow-up",
     title: "Accounts Receivable (AR) Follow-up",
     short:

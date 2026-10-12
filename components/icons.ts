@@ -15,12 +15,14 @@ import {
   Siren,
   Activity,
   Plus,
+  ScanSearch,
   type LucideIcon,
 } from 'lucide-react';
 
 export const serviceIcons: Record<string, LucideIcon> = {
   'medical-billing-and-claim-submission': FileText,
   'insurance-eligibility-and-benefits-verification': ShieldCheck,
+  'advanced-eligibility-verification': ScanSearch,
   'accounts-receivable-follow-up': Wallet,
   'denial-management-and-appeals': FileX2,
   'medical-coding': Code2,
