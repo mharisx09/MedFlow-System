@@ -134,7 +134,7 @@ export default async function HomePage() {
           />
         </div>
         <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-24">
-          <>
+          <div>
             <h1 className="text-4xl font-extrabold leading-tight text-ink sm:text-5xl">
               Medical billing that keeps your revenue flowing
             </h1>
@@ -156,7 +156,7 @@ export default async function HomePage() {
                 Our Services
               </Link>
             </div>
-          </>
+          </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
               <Image
                 src="/images/hero.webp"
