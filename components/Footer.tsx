@@ -57,6 +57,11 @@ export default function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link href="/faq" className="text-base text-white/90 hover:text-teal-light">
+                FAQs
+              </Link>
+            </li>
           </ul>
         </nav>
 

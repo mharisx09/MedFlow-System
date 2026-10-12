@@ -12,12 +12,10 @@ import {
   ArrowRight,
   CheckCircle2,
 } from 'lucide-react';
-import { siteConfig, services, specialties, softwareList, defaultFaqs, placeholderStats } from '@/config/site';
-import { prisma } from '@/lib/prisma';
+import { siteConfig, services, specialties, softwareList, placeholderStats } from '@/config/site';
 import { serviceIcons, specialtyIcons } from '@/components/icons';
 import Reveal from '@/components/Reveal';
 import Counter from '@/components/Counter';
-import FaqAccordion from '@/components/FaqAccordion';
 import LeadForm from '@/components/LeadForm';
 import Testimonials from '@/components/Testimonials';
 
@@ -94,36 +92,8 @@ const steps = [
 ];
 
 export default async function HomePage() {
-  let faqs = defaultFaqs;
-  try {
-    const dbFaqs = await prisma.faq.findMany({
-      where: { active: true },
-      orderBy: { sortOrder: 'asc' },
-    });
-    if (dbFaqs.length > 0) {
-      faqs = dbFaqs.map((f) => ({ question: f.question, answer: f.answer }));
-    }
-  } catch {
-    faqs = defaultFaqs;
-  }
-
-  /** Structured FAQ data — lets Google show our Q&As directly in search results. */
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map((f) => ({
-      '@type': 'Question',
-      name: f.question,
-      acceptedAnswer: { '@type': 'Answer', text: f.answer },
-    })),
-  };
-
   return (
     <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-mist">
         <div aria-hidden className="pointer-events-none absolute inset-0">
@@ -424,20 +394,6 @@ export default async function HomePage() {
             <div className="mt-8 rounded-2xl border border-mist bg-mist/60 p-6 sm:p-8">
               <LeadForm type="audit" compact />
             </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="bg-mist">
-        <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-          <Reveal className="text-center">
-            <h2 className="text-3xl font-extrabold text-ink sm:text-4xl">
-              Frequently asked questions
-            </h2>
-          </Reveal>
-          <Reveal delay={100} className="mt-8">
-            <FaqAccordion faqs={faqs} />
           </Reveal>
         </div>
       </section>
