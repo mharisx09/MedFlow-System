@@ -59,6 +59,7 @@ export const services: Service[] = [
     description: [
       "Our billing team prepares and submits clean claims to every payer, following each payer's specific formatting and documentation rules. Every claim is reviewed for accuracy before it goes out, which cuts down on rejections and speeds up payment.",
       "We track each claim from submission through adjudication and payment, posting payments and reconciling balances so your books always reflect reality. You get regular, easy-to-read reports that show exactly where your revenue stands.",
+      "Our service is built for small practices with 1 to 10 providers, the segment most billing companies overlook. You work directly with the people handling your claims, not a ticketing queue. Our workflows adapt to your specialty, your EHR, and your payer mix, because a solo therapist and a five-provider urgent care don't bill the same way. Transparent monthly reporting shows every claim submitted, every payment posted, and every denial worked, so you always know exactly what your billing partner is doing.",
     ],
     benefits: [
       "Fewer claim rejections through pre-submission review",
@@ -164,6 +165,7 @@ export const services: Service[] = [
     description: [
       "Claims that sit in accounts receivable cost your practice money every day they go unresolved. We work your AR aging systematically, contacting payers, resolving holds, correcting errors, and re-billing when needed until every claim is paid or properly resolved.",
       "Our follow-up process prioritizes high-value and aging claims first, so your oldest dollars get attention quickly. You see measurable movement in your AR days and a steady reduction in write-offs.",
+      "For small practices, AR follow-up is usually the first thing to slip when staff are stretched thin, and it's the highest-return activity in the revenue cycle. The MGMA benchmark for a well-run practice is 30 to 35 days in AR; anything over 50 signals revenue loss. Our team touches claims on a 7 to 14 day cadence, documents every payer interaction with reference numbers, and escalates stalled claims instead of letting them age. Most small practices see AR days drop within the first two months.",
     ],
     benefits: [
       "Shorter AR days and steadier cash flow",
@@ -199,6 +201,7 @@ export const services: Service[] = [
     description: [
       "Every denial is revenue waiting to be recovered. We investigate each denial to find the root cause, coding errors, missing documentation, medical necessity questions, or payer mistakes, and fix the underlying issue, not just the symptom.",
       "For denials worth fighting, we prepare and submit thorough appeals with the right clinical documentation and payer-specific language. We also track denial patterns so we can help you prevent the same denials from happening again.",
+      "Small practices feel denials hardest. A five-provider clinic doesn't have a denials department, it has an office manager already doing three jobs. Our denial management is built for that reality: we categorize every denial by reason, work them on a strict cadence so appeal deadlines never slip, and report monthly on the patterns driving your denials. The MGMA benchmark for first-pass denial rates is 7 to 8 percent, and disciplined practices get under 5 percent. If your rate is above 10 percent, our process typically cuts it significantly within two quarters by fixing front-end causes, not just appealing harder.",
     ],
     benefits: [
       "Root-cause analysis on every denial",
@@ -472,6 +475,36 @@ export const defaultFaqs: FaqItem[] = [
     answer:
       "That's completely fine. While many clients use our full revenue cycle service, you can also engage us for individual services such as denial management, AR follow-up, credentialing, or prior authorization. We'll build a plan around the specific gaps in your workflow.",
   },
+  {
+    question: "How much does it cost to outsource medical billing?",
+    answer:
+      "Most billing companies charge 4 to 9 percent of monthly collections, with small practices typically paying 5 to 7 percent for full-service billing in 2026. Some use per-claim pricing ($0.50 to $5 per claim) or flat monthly fees ($500 to $5,000+). Our pricing is a percentage of collections, so we only succeed when you do, and the exact rate depends on your specialty, claim volume, and scope of services.",
+  },
+  {
+    question: "What is a good denial rate for a medical practice?",
+    answer:
+      "The MGMA benchmark for first-pass denial rates is 7 to 8 percent, and well-run practices with disciplined front-end processes get under 5 percent. If your denial rate is above 10 percent, better eligibility verification, claim scrubbing, and denial tracking can usually cut it significantly within a few months.",
+  },
+  {
+    question: "How long does insurance credentialing take?",
+    answer:
+      "Commercial payer credentialing typically takes 90 to 120 days, and Medicaid can take up to 6 months. Because delays mean claims denied for provider-not-credentialed reasons, we recommend starting 4 to 6 months before a provider's go-live date. Our credentialing service manages the full application and follow-up process so nothing stalls.",
+  },
+  {
+    question: "Should a small practice choose a small billing company or a large RCM firm?",
+    answer:
+      "For practices with 1 to 10 providers, a small billing company usually fits better: you get direct access to the people working your claims, workflows adapted to your specialty and EHR, and faster answers when payer issues arise. Large RCM firms make more sense for multi-site organizations above 25 providers that need enterprise reporting. The key is choosing a partner built for practices your size.",
+  },
+  {
+    question: "How can a small practice reduce claim denials?",
+    answer:
+      "Start with the front end: verify eligibility before every visit, confirm patient demographics at check-in, and flag authorization requirements before the appointment. Then track denials by reason monthly, work them quickly with clear ownership, and feed the causes back into prevention. Small practices that systematize this routinely cut denial rates in half within two quarters.",
+  },
+  {
+    question: "What are the red flags when choosing a billing company?",
+    answer:
+      "Watch for rates far below 4 percent (usually minimal follow-up), rates above 9 percent without clear justification, undisclosed setup fees, long lock-in contracts with painful termination clauses, vague reporting, and no client references in your specialty. A trustworthy partner explains exactly what is included, reports transparently, and lets you talk to current clients.",
+  },
 ];
 
 export interface PlaceholderStat {
@@ -579,6 +612,146 @@ Finally, check the transition plan. A good partner runs in parallel with your ex
 
 Take your time, ask hard questions, and choose the partner that treats your revenue like their own.`,
     date: "2026-08-18",
+    draft: false,
+  },
+  {
+    slug: "cost-to-outsource-medical-billing-2026",
+    title: "How Much Does It Cost to Outsource Medical Billing in 2026",
+    excerpt:
+      "Real 2026 pricing for outsourced medical billing: percentage, per-claim, and flat-fee models, what drives the price, and the math on in-house vs outsourcing for small practices.",
+    content: `One of the first questions every practice owner asks is also one of the hardest to get a straight answer to: what does outsourced medical billing actually cost? Most billing companies hide their pricing behind "contact us for a quote," so here are the real 2026 numbers.
+
+## The three pricing models
+
+Nearly every billing company uses one of three models. Percentage of collections is the most common: the company takes 4 to 9 percent of what your practice collects each month. A small family practice collecting $80,000 a month would pay roughly $3,200 to $7,200. This model aligns incentives, because the billing company only earns more when you collect more.
+
+Per-claim pricing charges a flat amount per submitted claim, typically $0.50 to $5 depending on specialty complexity and volume. High-volume practices with straightforward claims sometimes prefer this because the cost is predictable.
+
+Flat-fee pricing charges a fixed monthly amount, usually $500 to $5,000 or more depending on practice size and services included. This works well for practices with stable volume that want a predictable line item in the budget.
+
+## What drives the price up or down
+
+Specialty matters most. Behavioral health, with its authorization maze and session-based billing, costs more to service than straightforward primary care. Claim volume matters too: a solo therapist submitting 200 claims a month is a different engagement than a five-provider urgent care submitting 3,000.
+
+The scope of services is the other big lever. Basic claim submission costs less than a full revenue cycle package covering eligibility verification, denial management, AR follow-up, credentialing, and patient billing. When comparing quotes, always compare identical scopes, because a cheap quote that excludes denial management is not actually cheap.
+
+## In-house vs outsourcing: the real math
+
+A full-time in-house biller costs $60,000 to $80,000 per year in salary alone. Add benefits, payroll taxes, billing software, clearinghouse fees, and ongoing training, and the true cost often lands between $85,000 and $110,000 annually. And one person is a single point of failure: vacations, turnover, and sick days all hit your cash flow directly.
+
+Compare that to outsourcing at, say, 6 percent of collections. A practice collecting $1 million a year pays about $60,000, with no hiring risk, no software costs, and a whole team instead of one person. For most practices under 10 providers, the math favors outsourcing, and the gap widens once you factor in the revenue recovered through better denial management.
+
+## Red flags in billing company pricing
+
+Be cautious of rates far below 4 percent, which usually signal offshore-only processing with minimal follow-up, or rates above 9 percent without a clear explanation of premium services. Watch for setup fees that aren't disclosed upfront, long lock-in contracts with painful termination clauses, and vague definitions of what "collections" means in the percentage calculation.
+
+## The bottom line
+
+For a typical small practice, expect to pay 5 to 7 percent of collections for full-service billing in 2026. Get the scope in writing, understand exactly what's included, and run the in-house comparison with fully loaded costs, not just salary. The cheapest option is rarely the one with the lowest percentage; it's the one that collects the most of what you've earned.`,
+    date: "2026-10-13",
+    draft: false,
+  },
+  {
+    slug: "reduce-claim-denials-small-practice",
+    title: "How to Reduce Claim Denials in a Small Practice",
+    excerpt:
+      "Denied claims are preventable. A practical playbook for small practices: benchmarks, the fixes that matter most, and how to track denials without expensive software.",
+    content: `Claim denials are one of the biggest revenue leaks in healthcare, and small practices feel them hardest. A five-provider clinic doesn't have a denials department; it has an office manager already doing three jobs. The good news: most denials are preventable, and the fixes that matter most are process changes, not expensive technology.
+
+## Know your benchmark
+
+The Medical Group Management Association reports that first-pass denial rates average 7 to 8 percent across medical groups, and that focused process improvements can bring that under 5 percent. If your denial rate is above 10 percent, you have a significant and fixable problem. Nearly half of medical group leaders now name denials and appeals as their single biggest revenue leak, so you are not alone.
+
+## Fix the front end first
+
+Around 23 percent of practice leaders identify front-end failures, eligibility and registration errors, as their top denial driver. This is the highest-return place to start. Verify every patient's eligibility before the visit, not after. Confirm demographics at check-in, because a wrong birth date or transposed ID number is an instant denial. Flag authorization requirements before the appointment, not when the claim bounces.
+
+## Build a denial tracking habit
+
+You cannot fix what you don't measure. Create a simple monthly report that groups every denial by reason: eligibility, coding, authorization, medical necessity, timely filing. A spreadsheet is enough. Within two months, patterns emerge, and those patterns tell you exactly where to focus. Many small practices discover that two or three denial reasons account for most of their lost revenue.
+
+## Work denials fast
+
+Every denial has an appeal deadline, and timely filing limits are unforgiving. Assign clear ownership so each denial has a person responsible for resolving it, and set turnaround targets: initial review within 5 business days, appeal filed within 15. Denials that sit untouched become write-offs.
+
+## Appeal like you mean it
+
+Well-documented appeals that cite the payer's own medical policies and include complete clinical documentation succeed far more often than form letters. Track your appeal win rate by payer. If one payer overturns 60 percent of appeals and another overturns 10 percent, that tells you where appeals pay off and where you need process changes instead.
+
+## Close the loop
+
+The final step is the one most practices skip: feed denial causes back into prevention. If coding errors drive your denials, invest in coder training or a coding audit. If authorizations are the issue, tighten the pre-visit workflow. Every denial should make the next one less likely.
+
+Small practices that systematize these six steps routinely cut denial rates in half within two quarters. If your team doesn't have the bandwidth to do it consistently, that's precisely what a billing partner is for.`,
+    date: "2026-10-13",
+    draft: false,
+  },
+  {
+    slug: "small-billing-company-vs-large-rcm",
+    title: "Small Billing Company vs Large RCM Company: An Honest Comparison",
+    excerpt:
+      "Should your small practice hire a boutique billing company or a large RCM firm? An honest breakdown of cost, service, and fit for practices under 10 providers.",
+    content: `When a small practice decides to outsource billing, the next question is who to hire: a boutique billing company built for practices like yours, or a large revenue cycle management firm with thousands of clients? Both can work, but they are built for very different customers. Here is an honest comparison.
+
+## How they differ
+
+Large RCM companies operate at scale. They onboard hundreds of practices onto standardized workflows, which keeps their per-client cost down but means your practice follows their process, not the other way around. You typically interact with an account team or a ticketing system rather than a person who knows your providers by name.
+
+Small billing companies live or die on relationships. With dozens of clients instead of thousands, each practice gets direct access to the people working its claims. Workflows adapt to how your practice actually operates, including your EHR, your payer mix, and your specialty's quirks.
+
+## Cost comparison
+
+Large RCM firms often quote competitive percentage rates, sometimes 4 to 6 percent, because scale lets them. But watch the fine print: implementation fees, technology fees, and charges for services like credentialing or patient collections can push the effective rate higher. Small companies typically charge 5 to 8 percent with fewer add-on fees, and the scope is usually clearer because there are fewer product lines to upsell.
+
+## Service and responsiveness
+
+This is where the difference is starkest. In a large RCM, your denials are worked by whoever is available in a shared queue. In a small company, the person working your denials knows that Dr. Smith's claims with a particular payer always need a specific attachment. That institutional knowledge compounds over time and shows up in your denial rate.
+
+Turnaround on questions differs too. Small companies typically answer in hours; large firms route through support tiers. When a payer issue is holding up $40,000 in claims, that difference matters.
+
+## Technology
+
+Large RCMs have an edge in proprietary analytics platforms and integrations. Small companies generally work inside your existing EHR and clearinghouse rather than requiring you onto their platform, which means less disruption during onboarding. For most small practices, this is a feature, not a limitation.
+
+## Which should you choose?
+
+Choose a large RCM if you are part of a growing multi-site organization that will exceed 25 providers, need enterprise reporting, or want a single vendor across many locations. Choose a small billing company if you have 1 to 10 providers, want direct relationships with the people touching your revenue, and value flexibility over standardization.
+
+The wrong choice in either direction is expensive, because switching billing companies mid-stream disrupts cash flow for months. Evaluate carefully, ask for client references in your specialty and size range, and pick the partner built for practices like yours.`,
+    date: "2026-10-13",
+    draft: false,
+  },
+  {
+    slug: "good-denial-rate-medical-practice",
+    title: "What Is a Good Denial Rate for a Medical Practice in 2026",
+    excerpt:
+      "2026 denial rate benchmarks by MGMA, HFMA, and payer type, how to calculate yours, and the practical steps that move a practice from average to best-in-class.",
+    content: `Every practice owner has wondered whether their denial rate is normal. The answer matters, because denials are pure lost revenue until they're worked, and every point of denial rate represents real money. Here are the 2026 benchmarks and what to do with them.
+
+## The headline benchmarks
+
+The Medical Group Management Association reports that first-pass denial rates have averaged 7 to 8 percent across medical groups over the last four years. Well-run practices with disciplined front-end processes get under 5 percent. If your rate sits above 10 percent, you're leaking significant revenue that better processes would capture.
+
+Context matters by payer type. Medicare Advantage plans show initial denial rates around 17.7 percent across hundreds of millions of claims, though more than half are overturned on appeal. Commercial payers vary widely. And specialty matters enormously: durable medical equipment suppliers face industry denial rates of 10 to 18 percent, while straightforward primary care typically runs lower than average.
+
+## How to calculate your denial rate
+
+Divide the number of claims denied on first submission by the total number of claims submitted in the same period. Use first-pass denials, not final denials after appeals, because the first-pass rate measures your process quality. Calculate it monthly and track the trend; a rising rate is an early warning that something upstream broke.
+
+## What separates good from average
+
+Practices under 5 percent share a few traits. They verify eligibility before every visit. They scrub claims before submission rather than fixing rejections after. They track denials by reason code monthly and attack the top three causes systematically. And they appeal quickly, because timely filing deadlines forgive nothing.
+
+The single biggest differentiator is front-end discipline. Nearly a quarter of practice leaders name eligibility and registration failures as their top denial driver. A practice that verifies coverage, confirms demographics, and flags authorization needs before the encounter prevents more denials than any appeals team can recover.
+
+## AR days: the companion metric
+
+Watch days in AR alongside your denial rate. MGMA benchmarks a well-run practice at 30 to 35 days in AR; anything over 50 signals trouble. High denial rates and high AR days usually share root causes, so fixing the front end improves both.
+
+## Moving from average to best-in-class
+
+Start by measuring: calculate your first-pass denial rate and your top five denial reasons. Fix the front end: eligibility verification and registration accuracy. Build the tracking habit: monthly denial reports by cause. Then work the backlog with clear ownership and deadlines. Practices that do this consistently move from 8 percent to under 5 percent within two quarters, which on $2 million in annual charges is $60,000 or more in recovered revenue.`,
+    date: "2026-10-13",
     draft: false,
   },
 ];

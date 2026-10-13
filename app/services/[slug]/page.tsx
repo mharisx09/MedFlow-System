@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import { CheckCircle2, FileCheck2 } from 'lucide-react';
 import Reveal from '@/components/Reveal';
 import { serviceIcons } from '@/components/icons';
-import { services, siteUrl } from '@/config/site';
+import { services, blogPosts, siteUrl } from '@/config/site';
 
 export function generateStaticParams() {
   return services.map((service) => ({ slug: service.slug }));
@@ -90,6 +90,36 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
                 </li>
               ))}
             </ol>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="bg-mist">
+        <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
+          <Reveal>
+            <h2 className="text-2xl font-extrabold text-ink sm:text-3xl">Related reading</h2>
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              {blogPosts
+                .filter((post) => !post.draft)
+                .slice(0, 4)
+                .map((post) => (
+                  <Link
+                    key={post.slug}
+                    href={`/blog/${post.slug}`}
+                    className="rounded-xl border border-white bg-white p-5 shadow-sm transition-shadow hover:shadow-md"
+                  >
+                    <h3 className="text-base font-bold text-ink hover:text-teal">
+                      {post.title}
+                    </h3>
+                    <p className="mt-1 text-sm text-ink/60">{post.excerpt.slice(0, 100)}...</p>
+                  </Link>
+                ))}
+            </div>
+            <div className="mt-6 text-center">
+              <Link href="/blog" className="font-semibold text-teal hover:text-teal-dark">
+                View all articles →
+              </Link>
+            </div>
           </Reveal>
         </div>
       </section>

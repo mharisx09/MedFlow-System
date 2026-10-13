@@ -64,11 +64,28 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
         <Reveal delay={100} className="mt-8">
           <div className="space-y-5">
-            {paragraphs.map((paragraph, i) => (
-              <p key={i} className="text-base leading-relaxed text-ink/80">
-                {paragraph}
-              </p>
-            ))}
+            {paragraphs.map((paragraph, i) => {
+              const trimmed = paragraph.trim();
+              if (trimmed.startsWith('## ')) {
+                return (
+                  <h2 key={i} className="pt-4 text-2xl font-extrabold text-ink">
+                    {trimmed.slice(3)}
+                  </h2>
+                );
+              }
+              if (trimmed.startsWith('### ')) {
+                return (
+                  <h3 key={i} className="pt-2 text-xl font-bold text-ink">
+                    {trimmed.slice(4)}
+                  </h3>
+                );
+              }
+              return (
+                <p key={i} className="text-base leading-relaxed text-ink/80">
+                  {trimmed}
+                </p>
+              );
+            })}
           </div>
         </Reveal>
 
