@@ -18,7 +18,13 @@ export default async function FaqPage() {
       orderBy: { sortOrder: 'asc' },
     });
     if (dbFaqs.length > 0) {
-      faqs = dbFaqs.map((f) => ({ question: f.question, answer: f.answer }));
+      const dbQuestions = new Set(
+        dbFaqs.map((f) => f.question.trim().toLowerCase())
+      );
+      faqs = [
+        ...dbFaqs.map((f) => ({ question: f.question, answer: f.answer })),
+        ...defaultFaqs.filter((f) => !dbQuestions.has(f.question.trim().toLowerCase())),
+      ];
     }
   } catch {
     faqs = defaultFaqs;
