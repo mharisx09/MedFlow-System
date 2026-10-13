@@ -9,6 +9,13 @@ import { siteConfig, siteUrl } from "@/config/site";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  icons: {
+    icon: [
+      { url: "/icon.png", sizes: "192x192", type: "image/png" },
+      { url: "/favicon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [{ url: "/icon.png", sizes: "192x192", type: "image/png" }],
+  },
   alternates: {
     canonical: siteUrl,
   },
