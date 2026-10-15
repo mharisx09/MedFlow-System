@@ -754,6 +754,66 @@ Start by measuring: calculate your first-pass denial rate and your top five deni
     date: "2026-10-13",
     draft: false,
   },
+  {
+    slug: "how-long-does-credentialing-take-2026",
+    title: "How Long Does Insurance Credentialing Take in 2026",
+    excerpt:
+      "Real 2026 credentialing timelines by payer type, what causes delays, and a checklist to get your providers enrolled faster.",
+    content: `Credentialing is the slowest part of bringing a new provider on board, and delays cost real money: claims submitted before a provider is credentialed get denied, and every week of delay pushes revenue further out. Here are the real 2026 timelines and how to shorten them.
+
+## The benchmarks
+
+Commercial payer credentialing typically takes 90 to 120 days from clean application to approval. Medicare is often faster, 60 to 90 days, when the application is complete. Medicaid is the slowest, frequently 120 to 180 days depending on the state. These are best-case timelines with complete applications; anything missing resets the clock.
+
+## Why it takes so long
+
+Payers verify everything: education, training, licenses, work history, malpractice coverage, hospital privileges, and references. Each item is checked independently, and verifications happen in sequence, not parallel. A single unreturned reference or an expired document can stall an application for weeks while nobody tells you.
+
+The other major cause of delay is errors. The vast majority of credentialing applications contain at least one error or omission, and payers don't fix them, they return the application and you start over. Common killers: mismatched dates between CV and application, missing CAQH attestation, and expired licenses discovered mid-process.
+
+## The speed-up checklist
+
+Start 4 to 6 months before the provider's go-live date, not 2. Keep CAQH current at all times, because most commercial payers pull from it. Gather every document before submitting: license, DEA, board certification, malpractice face sheet, CV with no gaps, and signed attestations. Respond to payer follow-ups within 48 hours; applications that sit in your inbox lose their place in the queue. And track every application in one place with dates, reference numbers, and next follow-up dates.
+
+## The cost of waiting
+
+A provider who can't bill for three extra months because credentialing stalled represents tens of thousands in delayed revenue, plus the salary you're paying while they can't generate collections. For small practices adding one provider, that delay can erase the margin on the hire's first year.
+
+## When to get help
+
+If your team is managing credentialing alongside everything else, applications slip. A dedicated credentialing service submits clean applications, follows up on schedule, and catches problems before payers do. The fee is small compared to one month of a provider's delayed revenue.`,
+    date: "2026-10-15",
+    draft: false,
+  },
+  {
+    slug: "prior-authorization-burden-small-practice-2026",
+    title: "Prior Authorization Is Eating 13 Hours a Week: What Small Practices Can Do",
+    excerpt:
+      "2026 AMA data on the prior authorization burden, and practical steps small practices can take to reduce delays and denials.",
+    content: `Prior authorization has quietly become one of the biggest drains on small practices. The 2026 AMA physician survey puts numbers on what every practice owner already feels: the average physician deals with 40 prior authorizations per week, consuming 13 hours of physician and staff time. Ninety-five percent report that prior auth delays patient care.
+
+## Why small practices suffer most
+
+Large systems have dedicated prior auth teams. A three-provider practice has whoever can squeeze it between patients. Authorizations get submitted late, clinical documentation is thin because nobody has time to write the perfect letter, and follow-up calls don't happen because the phones are already ringing. The result: more denials, more delays, more rework.
+
+## What you can actually do
+
+Build authorization into the scheduling workflow, not after it. When an appointment is booked for a service that typically needs auth, the auth process should start that day, with a checklist of what the payer requires. Most payers publish their criteria; keep a one-page reference per top payer so staff aren't guessing.
+
+Document like the reviewer is skeptical, because they are. Include the diagnosis, the conservative treatments already tried and failed, and the clinical rationale in the initial submission. A complete first submission beats a fast appeal every time.
+
+Track everything. Log submission dates, reference numbers, and promised decision dates. Follow up the day after a promised date passes, not a week later. Practices that systematize follow-up cut their auth-related delays dramatically.
+
+## The 2026 rule change
+
+CMS finalized prior authorization interoperability rules taking effect in 2026, requiring payers to support electronic prior auth APIs and faster decision timeframes. In practice, adoption is uneven, and the practices that benefit first will be the ones already submitting clean, complete, electronic requests. Paper fax workflows won't capture the gains.
+
+## Getting help
+
+Prior authorization is one of the most outsourceable parts of the revenue cycle: it's rules-based, high-volume, and punishes inconsistency. If auth delays are costing your practice appointments and revenue, having a dedicated team run the process, with payer-specific checklists and relentless follow-up, typically pays for itself within the first quarter.`,
+    date: "2026-10-15",
+    draft: false,
+  },
 ];
 
 export interface Testimonial {
