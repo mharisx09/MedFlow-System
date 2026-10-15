@@ -237,6 +237,7 @@ export const services: Service[] = [
     description: [
       "Correct coding is the foundation of every clean claim. Our coders translate your clinical documentation into accurate CPT, ICD-10-CM, and HCPCS codes, following current guidelines so your coding reflects the full scope of care provided.",
       "Accurate coding protects your revenue in two directions: it prevents under-coding that leaves money on the table and over-coding that creates compliance risk. Every coded encounter goes through quality review before claims are generated.",
+      "For small practices, coding is often done by whoever has a spare minute, which is how revenue leaks. Under-coding a level 4 visit as level 3 across hundreds of encounters adds up to tens of thousands a year. Our coders know the documentation requirements that support higher-level codes legitimately, and we flag documentation gaps with practical fixes your providers can actually use.",
     ],
     benefits: [
       "Accurate CPT, ICD-10-CM, and HCPCS coding",
@@ -272,6 +273,7 @@ export const services: Service[] = [
     description: [
       "Credentialing delays can keep a provider from billing for months. We manage the full credentialing and enrollment process, gathering documents, completing applications, following up with payers, and tracking every deadline, so your providers can start seeing patients and billing sooner.",
       "We also monitor re-credentialing dates and payer requirements on an ongoing basis, so your participation status never lapses unexpectedly.",
+      "Commercial credentialing takes 90 to 120 days and Medicaid up to 6 months, which is why we start 4 to 6 months before a provider's go-live date. For a small practice adding one provider, every month of delay is a month of salary paid with no collections to offset it. We submit clean applications, follow up on schedule, and catch document problems before payers use them as an excuse to stall.",
     ],
     benefits: [
       "Faster enrollment with commercial and government payers",
@@ -307,6 +309,7 @@ export const services: Service[] = [
     description: [
       "Prior authorization requirements keep growing, and missed authorizations mean denied claims and delayed care. We handle the authorization process end to end, checking requirements, submitting requests with clinical documentation, and following up until a decision is reached.",
       "By securing authorizations before the service date, we help your patients get timely care and your practice get paid without the back-and-forth of retroactive appeals.",
+      "The average physician now deals with 40 prior authorizations per week, eating 13 hours of staff time. Small practices feel this hardest because there is no dedicated auth team, just whoever can squeeze it between patients. We run authorizations with payer-specific checklists, complete clinical documentation on first submission, and relentless follow-up, so approvals come faster and fewer services get delayed or denied.",
     ],
     benefits: [
       "Authorizations secured before the date of service",
@@ -346,6 +349,7 @@ export const services: Service[] = [
     description: [
       "Patient balances are a growing share of practice revenue, but confusing statements and poor follow-up leave money uncollected. We produce clear, easy-to-understand statements and handle patient billing inquiries with professionalism and patience.",
       "Our process keeps patients informed at every step, from the first statement through gentle reminders, which improves collection rates while protecting your practice's reputation and patient relationships.",
+      "With high-deductible plans now the norm, small practices collect more than ever directly from patients, yet most have no system for it beyond sending a statement and hoping. We run patient billing like a process: accurate balances verified before anything goes out, statements patients can actually understand, consistent reminder cadence, and courteous handling of every question. Practices that systematize patient collections typically recover 20 to 30 percent more of their patient AR.",
     ],
     benefits: [
       "Clear, easy-to-read patient statements",
@@ -811,6 +815,62 @@ CMS finalized prior authorization interoperability rules taking effect in 2026, 
 ## Getting help
 
 Prior authorization is one of the most outsourceable parts of the revenue cycle: it's rules-based, high-volume, and punishes inconsistency. If auth delays are costing your practice appointments and revenue, having a dedicated team run the process, with payer-specific checklists and relentless follow-up, typically pays for itself within the first quarter.`,
+    date: "2026-10-15",
+    draft: false,
+  },
+  {
+    slug: "dental-cross-billing-medical-insurance-101",
+    title: "Dental Cross-Billing 101: When to Bill Medical Insurance for Dental Procedures",
+    excerpt:
+      "Many dental procedures can be billed to medical insurance. Learn which ones qualify, how cross-billing works, and what it means for your practice revenue.",
+    content: `Most dentists don't know they can bill medical insurance for certain procedures, which means real revenue goes uncollected. When a dental procedure is medically necessary, trauma, pathology, sleep apnea appliances, TMJ treatment, or oral surgery tied to a medical diagnosis, medical insurance may cover it, often at better rates than dental plans.
+
+## Which procedures qualify
+
+The key test is medical necessity with a medical diagnosis code. Examples include: tooth extractions tied to radiation treatment or organ transplant, sleep apnea oral appliances (with a sleep study diagnosis), TMJ treatment, biopsies and pathology, trauma repair, and implant procedures related to accident or disease. Cosmetic and routine restorative work does not qualify.
+
+## How cross-billing works
+
+Cross-billing means submitting the dental procedure to the patient's medical plan, usually as an out-of-network claim, using medical diagnosis codes (ICD-10) alongside the dental procedure codes. Documentation must tell the medical story: the diagnosis, why the procedure was medically necessary, and supporting clinical notes. Medical reviewers don't think in dental terms, so the narrative matters.
+
+## Why most practices leave money here
+
+The knowledge gap is the biggest barrier. Dental teams are trained in dental billing; medical billing has different codes, different forms, and different payer rules. Many practices also assume the effort isn't worth it, but a single sleep apnea appliance billed to medical can reimburse several times what the dental plan pays.
+
+## Getting it right
+
+Start by identifying the procedures you already perform that have a medical diagnosis behind them. Build documentation templates that capture the medical necessity narrative at the time of treatment, not weeks later when the claim is prepared. And verify medical benefits before treatment, because out-of-network medical benefits vary widely and patients need accurate estimates.
+
+For dental practices doing surgical, sleep, or trauma-related work, cross-billing is one of the highest-ROI revenue opportunities available, and most competitors aren't doing it.`,
+    date: "2026-10-15",
+    draft: false,
+  },
+  {
+    slug: "dme-billing-denials-small-suppliers",
+    title: "Why DME Claims Deny at 10 to 18 Percent, and How Small Suppliers Get Under 5",
+    excerpt:
+      "DME billing has the highest denial rates in healthcare. The specific reasons claims deny and the process fixes that bring small suppliers under 5 percent.",
+    content: `Durable medical equipment suppliers face the toughest billing environment in healthcare, with industry denial rates running 10 to 18 percent. For a small supplier, that means nearly one in six claims needs rework. The causes are specific to DME, and so are the fixes.
+
+## Why DME denies so much
+
+Documentation is the number one killer. Medicare and commercial payers require detailed written orders, face-to-face encounter notes, and proof of medical necessity before they'll pay for equipment. Missing one element means denial, and the requirements differ by product category, power wheelchairs have different rules than CPAP machines, which differ from orthotics.
+
+Prior authorization is the second driver. Many DME items need auth, and the auth must match the exact HCPCS code billed. A common failure: getting auth for a base code, then billing with a modifier the auth didn't cover.
+
+The third is the sheer complexity of LCDs and NCDs. Local and national coverage determinations set granular rules, down to how often supplies can be refilled and which diagnoses support which equipment. Small suppliers rarely have someone tracking these full-time.
+
+## The fixes that work
+
+Build product-specific checklists. For each HCPCS category you bill, document exactly what the payer requires: order elements, encounter note contents, auth requirements, and refill rules. Intake staff should work from these checklists before equipment ships, because fixing documentation after delivery is ten times harder.
+
+Verify and authorize before fulfillment. Never ship on a promise; confirm the auth covers the exact codes and quantities. This single discipline eliminates a huge share of denials.
+
+Track denials by product category, not just overall. If power mobility denies at 20 percent but CPAP denies at 6 percent, your fix belongs in the mobility workflow. Category-level tracking turns a scary overall rate into solvable specific problems.
+
+## The payoff
+
+Small DME suppliers that systematize intake checklists, pre-fulfillment authorization, and category-level denial tracking routinely cut denial rates from the mid-teens to under 5 percent. On $1 million in annual billings, that's $100,000 or more in revenue that stops leaking.`,
     date: "2026-10-15",
     draft: false,
   },
