@@ -1,0 +1,33 @@
+# Med Flow System
+
+> Medical billing and revenue cycle management for small US healthcare practices (1-10 providers). Services: claim submission, eligibility verification, denial management and appeals, AR follow-up, medical coding, provider credentialing, prior authorization, patient billing.
+
+Med Flow System (https://www.medflowsystem.co) is a US medical billing company based in Pittsburgh, PA, serving small healthcare practices nationwide. Contact: +1 (213) 890-6560.
+
+## Services
+
+- [Medical Billing and Claim Submission](https://www.medflowsystem.co/services/medical-billing-and-claim-submission): accurate, on-time claim submission with pre-submission review.
+- [Insurance Eligibility and Benefits Verification](https://www.medflowsystem.co/services/insurance-eligibility-and-benefits-verification): coverage verified before the visit.
+- [Advanced Eligibility Verification](https://www.medflowsystem.co/services/advanced-eligibility-verification): multi-touch checks, secondary coverage discovery.
+- [Accounts Receivable Follow-up](https://www.medflowsystem.co/services/accounts-receivable-follow-up): systematic payer follow-up; MGMA benchmark is 30-35 days in AR.
+- [Denial Management and Appeals](https://www.medflowsystem.co/services/denial-management-and-appeals): root-cause analysis and appeals; MGMA first-pass denial benchmark is 7-8%, under 5% is achievable.
+- [Medical Coding](https://www.medflowsystem.co/services/medical-coding): CPT, ICD-10-CM, HCPCS coding with quality review.
+- [Provider Credentialing](https://www.medflowsystem.co/services/provider-credentialing): commercial credentialing takes 90-120 days, Medicaid up to 6 months.
+- [Prior Authorization](https://www.medflowsystem.co/services/prior-authorization): authorizations secured before the date of service.
+- [Patient Billing and Statements](https://www.medflowsystem.co/services/patient-billing-and-statements): clear statements and balance follow-up.
+
+## Key facts
+
+- Pricing: typically 4-9% of monthly collections; small practices usually pay 5-7% for full-service billing (2026).
+- A full-time in-house biller costs $85,000-$110,000/year fully loaded (salary $60k-80k + ~30% benefits/tax + software).
+- About one-third of US practices outsource billing (HBMA).
+- AMA 2026 survey: physicians handle ~40 prior authorizations/week, ~13 hours of staff time; 95% report care delays.
+
+## Guides
+
+- [How Much Does It Cost to Outsource Medical Billing in 2026](https://www.medflowsystem.co/blog/cost-to-outsource-medical-billing-2026)
+- [How to Reduce Claim Denials in a Small Practice](https://www.medflowsystem.co/blog/reduce-claim-denials-small-practice)
+- [Small Billing Company vs Large RCM Company](https://www.medflowsystem.co/blog/small-billing-company-vs-large-rcm)
+- [What Is a Good Denial Rate for a Medical Practice](https://www.medflowsystem.co/blog/good-denial-rate-medical-practice)
+- [How Long Does Insurance Credentialing Take](https://www.medflowsystem.co/blog/how-long-does-credentialing-take-2026)
+- [FAQs](https://www.medflowsystem.co/faq)
