@@ -606,6 +606,170 @@ export const specialtyPages: SpecialtyPage[] = [
       { value: "<5%", label: "Denial rate our process targets" },
     ],
   },
+  {
+    slug: "primary-care-billing",
+    name: "Primary Care",
+    title: "Primary Care Billing Services for Small Practices",
+    metaDescription:
+      "Billing for primary care practices: high-volume visit billing, preventive and chronic care coding, AWV billing, and payer mix management.",
+    intro: [
+      "Primary care billing is high-volume and deceptively complex. Preventive visits billed alongside problem-oriented care, annual wellness visits with their own rules, chronic care management codes most practices underuse, and transitional care management that pays well but requires precise documentation.",
+      "We handle billing for small primary care practices, capturing the revenue hidden in codes most practices never bill.",
+    ],
+    painPoints: [
+      {
+        title: "Preventive plus problem visits",
+        text: "When a preventive visit turns into a problem-oriented visit, both can be billed with modifier 25, but only with the right documentation. Most practices bill one or the other and leave money behind.",
+      },
+      {
+        title: "Unbilled care management",
+        text: "Chronic care management (99490), transitional care management (99495/99496), and advance care planning codes pay well and most small practices never bill them.",
+      },
+      {
+        title: "AWV confusion",
+        text: "Annual wellness visits have specific required elements and can't be billed like a regular visit. Done wrong, they deny; done right, they're steady revenue.",
+      },
+      {
+        title: "Volume-driven errors",
+        text: "High visit volume means small error rates compound fast. A 3% coding error rate across 500 visits a month is 15 problem claims every month.",
+      },
+    ],
+    howWeHelp: [
+      "We review visits for preventive-plus-problem billing opportunities with proper modifier 25 use.",
+      "Our team identifies unbilled care management services from your encounter data and gets them claimed.",
+      "AWV documentation is checked against CMS requirements before billing.",
+      "High-volume claim scrubbing catches errors before they become denials.",
+      "Monthly reports track your per-visit revenue so you can see the trend.",
+    ],
+    stats: [
+      { value: "99490", label: "CCM code most practices underbill" },
+      { value: "30-35", label: "Days in AR our process targets (MGMA benchmark)" },
+      { value: "<5%", label: "Denial rate our process targets" },
+    ],
+  },
+  {
+    slug: "cardiology-billing",
+    name: "Cardiology",
+    title: "Cardiology Billing Services for Small Practices",
+    metaDescription:
+      "Cardiology billing: diagnostic, interventional, and E&M coding with correct modifiers, prior auth handling, and payer-specific rules.",
+    intro: [
+      "Cardiology billing spans office visits, diagnostics (echo, stress tests, Holter), and interventional procedures, each with its own coding rules, modifier requirements, and prior authorization hurdles. Small cardiology practices often lose revenue in the handoffs between these service types.",
+      "We handle cardiology billing end to end, from the office E&M through the cath lab claim.",
+    ],
+    painPoints: [
+      {
+        title: "Modifier complexity",
+        text: "Cardiology lives on modifiers: 25, 59, 76, 77, and laterality modifiers. Wrong modifier combinations are the top cardiology denial driver.",
+      },
+      {
+        title: "Prior auth for diagnostics",
+        text: "Echoes, nuclear stress tests, and CTAs almost always need prior auth. The auth must match the exact CPT billed, or the claim denies.",
+      },
+      {
+        title: "Global period confusion",
+        text: "Procedures with 90-day global periods swallow related E&Ms unless modifiers are applied correctly. Practices routinely underbill post-procedure visits.",
+      },
+      {
+        title: "Medical necessity denials",
+        text: "Payers scrutinize advanced cardiac imaging for medical necessity. Thin documentation on the indication means denial.",
+      },
+    ],
+    howWeHelp: [
+      "Modifier combinations are validated against NCCI edits before every claim goes out.",
+      "Diagnostic authorizations are secured with exact CPT matching before the test date.",
+      "Global period tracking ensures billable post-procedure visits aren't missed.",
+      "We build the medical necessity documentation payers require for advanced imaging.",
+      "Denial patterns are tracked by procedure type so systemic issues get fixed, not just appealed.",
+    ],
+    stats: [
+      { value: "NCCI", label: "Edits checked on every cardiology claim" },
+      { value: "90-day", label: "Global periods tracked automatically" },
+      { value: "<5%", label: "Denial rate our process targets" },
+    ],
+  },
+  {
+    slug: "orthopedic-billing",
+    name: "Orthopedics",
+    title: "Orthopedic Billing Services for Small Practices",
+    metaDescription:
+      "Orthopedic billing: surgical coding, global periods, DME and PT coordination, implant billing, and authorization handling for ortho practices.",
+    intro: [
+      "Orthopedic billing covers the full episode of care: office visits, imaging, surgery, implants, DME, and physical therapy referrals. Each piece has different rules, and the money leaks in the gaps between them. Small ortho practices feel this most because there's no team watching every handoff.",
+      "We manage orthopedic billing across the entire episode, so nothing falls through the cracks.",
+    ],
+    painPoints: [
+      {
+        title: "Surgical coding errors",
+        text: "Ortho surgeries involve multiple procedures, assistant surgeon modifiers (80/81/AS), and implant billing. Unbundling mistakes trigger denials and audits alike.",
+      },
+      {
+        title: "Authorization for surgery",
+        text: "Elective ortho surgeries need prior auth with conservative treatment documentation. Incomplete auth packages delay surgery dates and frustrate patients.",
+      },
+      {
+        title: "DME and supply billing",
+        text: "Braces, boots, and stimulators dispensed in-office need separate billing with proper HCPCS codes. Most practices underbill or skip this entirely.",
+      },
+      {
+        title: "PT referral leakage",
+        text: "When PT happens in-house, visit tracking and auth renewals often slip. When referred out, nobody tracks whether the auth covered it.",
+      },
+    ],
+    howWeHelp: [
+      "Surgical claims are coded with correct primary/secondary procedures and assistant modifiers.",
+      "Surgery authorizations are built with complete conservative-care documentation before submission.",
+      "In-office DME is billed with proper HCPCS codes so supply revenue isn't missed.",
+      "Global periods are tracked so billable post-op visits are captured.",
+      "PT authorizations and visit counts are monitored whether therapy is in-house or referred.",
+    ],
+    stats: [
+      { value: "Episode", label: "Full episode-of-care billing, not just visits" },
+      { value: "90-day", label: "Global periods tracked automatically" },
+      { value: "<5%", label: "Denial rate our process targets" },
+    ],
+  },
+  {
+    slug: "urgent-care-billing",
+    name: "Urgent Care",
+    title: "Urgent Care Billing Services for High-Volume Clinics",
+    metaDescription:
+      "Urgent care billing: fast-turn claims, modifier 25 handling, varied payer rules, and self-pay collection for walk-in clinics.",
+    intro: [
+      "Urgent care billing is a volume game with thin margins for error. Walk-in patients, no scheduled appointments to verify in advance, a payer mix that changes by the hour, and procedures ranging from simple E&Ms to laceration repairs and X-rays, all in one visit.",
+      "We handle urgent care billing built for speed: fast claim turnaround, correct procedure coding, and payer rules applied per visit.",
+    ],
+    painPoints: [
+      {
+        title: "Modifier 25 denials",
+        text: "Urgent care visits routinely combine an E&M with a procedure (laceration repair, I&D, splinting). Without modifier 25 and supporting documentation, the E&M denies.",
+      },
+      {
+        title: "No pre-visit verification",
+        text: "Walk-in model means no advance eligibility checks. Coverage surprises surface after the visit, when it's too late to collect accurately.",
+      },
+      {
+        title: "Self-pay leakage",
+        text: "A large share of urgent care patients are self-pay or high-deductible. Without a real-time collection process, balances go uncollected.",
+      },
+      {
+        title: "Payer mix chaos",
+        text: "Dozens of payers with different rules, all in one day's schedule. Coding that works for one payer denies with another.",
+      },
+    ],
+    howWeHelp: [
+      "E&M-plus-procedure visits are coded with modifier 25 and documentation review on every claim.",
+      "Same-day eligibility verification runs for every registered patient, even walk-ins.",
+      "Self-pay estimates are generated at check-in with clear payment options, improving point-of-service collection.",
+      "Payer-specific rules are applied per claim, not one-size-fits-all.",
+      "Claims go out fast: urgent care cash flow depends on speed, and our turnaround reflects that.",
+    ],
+    stats: [
+      { value: "Same-day", label: "Eligibility verification for walk-in patients" },
+      { value: "25", label: "Modifier applied correctly on procedure visits" },
+      { value: "<5%", label: "Denial rate our process targets" },
+    ],
+  },
 ];
 
 /**
