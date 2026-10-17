@@ -196,7 +196,7 @@ export default async function HomePage() {
             </p>
           </Reveal>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {services.slice(0, 6).map((service, i) => {
+            {services.map((service, i) => {
               const Icon = serviceIcons[service.slug] ?? FileCheck2;
               return (
                 <Reveal key={service.slug} delay={i * 80}>
