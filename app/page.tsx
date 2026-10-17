@@ -12,7 +12,7 @@ import {
   ArrowRight,
   CheckCircle2,
 } from 'lucide-react';
-import { siteConfig, services, specialties, softwareList, placeholderStats } from '@/config/site';
+import { siteConfig, services, specialties, specialtyPages, softwareList, placeholderStats } from '@/config/site';
 import { serviceIcons, specialtyIcons } from '@/components/icons';
 import Reveal from '@/components/Reveal';
 import Counter from '@/components/Counter';
@@ -326,10 +326,15 @@ export default async function HomePage() {
           <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
             {specialties.map((specialty, i) => {
               const Icon = specialtyIcons[specialty.name] ?? Stethoscope;
+              const detailPage = specialtyPages.find(
+                (p) =>
+                  p.name.toLowerCase() === specialty.name.toLowerCase() ||
+                  (specialty.name === 'Mental Health' && p.slug === 'behavioral-health-billing')
+              );
               return (
                 <Reveal key={specialty.name} delay={i * 50}>
                   <Link
-                    href="/specialties"
+                    href={detailPage ? `/specialties/${detailPage.slug}` : '/specialties'}
                     className="flex h-full flex-col items-center gap-3 rounded-2xl border border-mist bg-white p-6 text-center shadow-sm transition-shadow hover:shadow-md"
                   >
                     <span className="rounded-xl bg-teal/10 p-3 text-teal">
