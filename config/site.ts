@@ -426,6 +426,188 @@ export const specialties: Specialty[] = [
   },
 ];
 
+export interface SpecialtyPage {
+  slug: string;
+  name: string;
+  title: string;
+  metaDescription: string;
+  intro: string[];
+  painPoints: { title: string; text: string }[];
+  howWeHelp: string[];
+  stats: { value: string; label: string }[];
+}
+
+/**
+ * Dedicated landing pages for high-opportunity specialties.
+ * Each targets a winnable keyword for small-practice commercial intent.
+ */
+export const specialtyPages: SpecialtyPage[] = [
+  {
+    slug: "behavioral-health-billing",
+    name: "Behavioral Health",
+    title: "Behavioral Health Billing Services for Small Practices",
+    metaDescription:
+      "Billing for therapists, counselors, and behavioral health practices. We handle authorizations, session billing, and credentialing so you can focus on clients.",
+    intro: [
+      "Behavioral health billing is some of the most complex in healthcare: session-based codes, strict authorization requirements, varying session limits by payer, and credentialing hurdles that delay everything. For a solo therapist or small group practice, managing it in-house eats hours every week.",
+      "We specialize in billing for therapists, counselors, psychologists, and behavioral health clinics with 1 to 10 providers. Our team knows the authorization maze, the session-limit rules, and the documentation that gets claims paid.",
+    ],
+    painPoints: [
+      {
+        title: "Authorization hell",
+        text: "Most payers require prior authorization for therapy, with session limits that vary by plan. Miss the auth or exceed the limit without re-authorization, and the claim denies.",
+      },
+      {
+        title: "Credentialing delays",
+        text: "Getting credentialed with commercial payers takes 90 to 120 days. New therapists often can't bill for months while applications sit in queues.",
+      },
+      {
+        title: "Session billing errors",
+        text: "Timed codes (90832, 90834, 90837) have strict time thresholds. Bill the wrong code for the session length and you invite denials or audits.",
+      },
+      {
+        title: "Telehealth confusion",
+        text: "Telehealth billing rules changed repeatedly since 2020. Modifier 95 vs GT, place of service codes, and payer-specific telehealth policies create constant denials.",
+      },
+    ],
+    howWeHelp: [
+      "We verify benefits and authorization requirements before every client intake, so you know what's covered before the first session.",
+      "Our team tracks session counts against payer limits and initiates re-authorizations before you hit the cap.",
+      "We manage the full credentialing process for new therapists, following up until enrollment is confirmed.",
+      "Claims are coded to session length and payer rules, with telehealth modifiers applied correctly.",
+      "Monthly reports show your collections, denial rate, and AR in plain language.",
+    ],
+    stats: [
+      { value: "90-120", label: "Days typical commercial credentialing takes" },
+      { value: "40%", label: "Of practices cite authorizations as top admin burden" },
+      { value: "<5%", label: "Denial rate our process targets" },
+    ],
+  },
+  {
+    slug: "aba-therapy-billing",
+    name: "ABA Therapy",
+    title: "ABA Therapy Billing Services for Small Clinics",
+    metaDescription:
+      "Billing for ABA clinics: authorization renewals, BCBA credentialing, timed codes, and payer-specific rules handled by specialists.",
+    intro: [
+      "Applied Behavior Analysis billing is a specialty within a specialty. Timed codes in 15-minute units, treatment plan authorizations that expire, BCBA and RBT credentialing requirements, and payer rules that seem to change quarterly. Small ABA clinics feel this acutely because there's rarely a dedicated biller on staff.",
+      "We handle ABA billing for small clinics, so your BCBAs spend time on treatment plans, not payer phone calls.",
+    ],
+    painPoints: [
+      {
+        title: "Authorization renewals",
+        text: "ABA authorizations are tied to treatment plans with expiration dates. Let one lapse and every session after it denies. Tracking dozens of clients' auth windows manually is where clinics lose revenue.",
+      },
+      {
+        title: "Unit billing errors",
+        text: "Codes like 97153 and 97155 bill in 15-minute units with specific rounding rules. Miscounted units are one of the most common ABA denial reasons.",
+      },
+      {
+        title: "BCBA credentialing",
+        text: "Payers credential BCBAs individually, and RBTs often need to be rostered under the supervising BCBA. New hires can wait months before their sessions are billable.",
+      },
+      {
+        title: "Medical necessity documentation",
+        text: "Payers scrutinize ABA medical necessity more than almost any other service. Thin treatment plans trigger denials and audits.",
+      },
+    ],
+    howWeHelp: [
+      "We track every client's authorization window and start renewals before expiration, so no session goes unbilled.",
+      "Unit calculations are validated against payer rounding rules before claims go out.",
+      "We manage BCBA credentialing and RBT rostering end to end.",
+      "We flag documentation gaps that would trigger medical necessity denials, with practical fixes.",
+      "Denials are worked on a strict cadence with payer-specific appeal language.",
+    ],
+    stats: [
+      { value: "15-min", label: "Unit billing precision we validate on every claim" },
+      { value: "100%", label: "Of auth windows tracked proactively" },
+      { value: "<5%", label: "Denial rate our process targets" },
+    ],
+  },
+  {
+    slug: "physical-therapy-billing",
+    name: "Physical Therapy",
+    title: "Physical Therapy Billing Services for Small Clinics",
+    metaDescription:
+      "PT billing without the 8-minute rule denials: timed codes, KX modifiers, visit limits, and authorization handling for small PT practices.",
+    intro: [
+      "Physical therapy billing lives and dies on details: the 8-minute rule for timed codes, KX modifiers for exceeding therapy caps, visit limits that vary by payer, and authorization requirements that differ for every plan. Get one detail wrong and the visit denies.",
+      "We handle PT billing for small and independent clinics, catching the errors that cause the most common PT denials before claims go out.",
+    ],
+    painPoints: [
+      {
+        title: "8-minute rule violations",
+        text: "Timed codes (97110, 97140, 97530) require at least 8 minutes of direct one-on-one time per unit. Documentation that doesn't support the units billed is an instant denial and an audit flag.",
+      },
+      {
+        title: "KX modifier mistakes",
+        text: "When therapy exceeds the annual cap, the KX modifier attests medical necessity. Missing it means denial; using it without supporting documentation means audit risk.",
+      },
+      {
+        title: "Visit limit tracking",
+        text: "Many plans cap PT visits per year. Clinics that don't track remaining visits discover the limit only when claims start denying.",
+      },
+      {
+        title: "Authorization gaps",
+        text: "PT almost always needs prior auth, and re-authorization mid-plan-of-care is where most clinics drop the ball.",
+      },
+    ],
+    howWeHelp: [
+      "Every timed-code claim is checked against 8-minute rule requirements before submission.",
+      "KX modifiers are applied with documentation review, so caps don't become denials or audit risks.",
+      "We track visit counts against payer limits and alert you before patients hit caps.",
+      "Authorizations are secured before the plan of care starts and renewed before they expire.",
+      "Our coders know PT-specific LCD rules and apply them per payer.",
+    ],
+    stats: [
+      { value: "8-min", label: "Rule compliance checked on every timed claim" },
+      { value: "30-35", label: "Days in AR our process targets (MGMA benchmark)" },
+      { value: "<5%", label: "Denial rate our process targets" },
+    ],
+  },
+  {
+    slug: "dental-billing",
+    name: "Dental",
+    title: "Dental Billing Services Including Medical Cross-Billing",
+    metaDescription:
+      "Dental billing plus medical cross-billing: we bill medical insurance for qualifying dental procedures (sleep apnea, TMJ, trauma, oral surgery) that most practices miss.",
+    intro: [
+      "Dental billing has its own codes, its own payers, and its own denial patterns. But the biggest opportunity most dental practices miss isn't dental billing at all: it's billing medical insurance for procedures that qualify, like sleep apnea appliances, TMJ treatment, trauma repair, and oral surgery tied to medical diagnoses.",
+      "We handle standard dental billing and medical cross-billing, capturing revenue most practices leave on the table.",
+    ],
+    painPoints: [
+      {
+        title: "Missed medical billing",
+        text: "Procedures like sleep apnea appliances, TMJ treatment, and trauma-related surgery can often be billed to medical insurance, frequently at better rates than dental plans. Most practices never try.",
+      },
+      {
+        title: "Dental claim denials",
+        text: "Missing tooth clauses, waiting periods, downgraded posterior composites, and frequency limitations drive the most common dental denials.",
+      },
+      {
+        title: "Benefit verification gaps",
+        text: "Dental benefits are notoriously hard to verify accurately. Wrong estimates at check-in mean surprise balances and unhappy patients.",
+      },
+      {
+        title: "Cross-billing documentation",
+        text: "Medical reviewers don't think in dental terms. Claims need the medical diagnosis narrative, not just the procedure code.",
+      },
+    ],
+    howWeHelp: [
+      "We identify which of your procedures qualify for medical billing and build the documentation to support it.",
+      "Cross-billed claims are submitted with ICD-10 medical diagnoses and narratives that medical reviewers understand.",
+      "Dental benefits are verified before treatment with accurate patient estimates.",
+      "Common dental denial patterns (waiting periods, frequency limits, downgrades) are checked before submission.",
+      "We track both dental and medical AR so nothing falls through the cracks between the two systems.",
+    ],
+    stats: [
+      { value: "2x-4x", label: "Typical medical vs dental reimbursement on qualifying procedures" },
+      { value: "100%", label: "Of qualifying procedures screened for cross-billing" },
+      { value: "<5%", label: "Denial rate our process targets" },
+    ],
+  },
+];
+
 /**
  * Systems the team works with. Present these as chips labeled as systems the
  * team works with, page copy must add "We adapt to your EHR and practice

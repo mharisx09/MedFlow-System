@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Stethoscope } from 'lucide-react';
 import Reveal from '@/components/Reveal';
 import { specialtyIcons } from '@/components/icons';
-import { specialties, siteUrl } from '@/config/site';
+import { specialties, specialtyPages, siteUrl } from '@/config/site';
 
 export const metadata = {
   title: 'Specialties We Support | Med Flow System',
@@ -37,15 +37,34 @@ export default function SpecialtiesPage() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {specialties.map((specialty, i) => {
               const Icon = specialtyIcons[specialty.name] ?? Stethoscope;
+              const detailPage = specialtyPages.find(
+                (p) =>
+                  p.name.toLowerCase() === specialty.name.toLowerCase() ||
+                  (specialty.name === 'Mental Health' && p.slug === 'behavioral-health-billing')
+              );
+              const card = (
+                <article className="h-full rounded-2xl border border-mist bg-white p-7 shadow-sm transition-shadow hover:shadow-md">
+                  <span className="w-fit rounded-xl bg-teal/10 p-3 text-teal">
+                    <Icon size={26} />
+                  </span>
+                  <h2 className="mt-4 text-xl font-bold text-ink">{specialty.name}</h2>
+                  <p className="mt-2 text-base text-ink/70">{specialty.blurb}</p>
+                  {detailPage && (
+                    <p className="mt-3 text-base font-semibold text-teal">
+                      Learn more →
+                    </p>
+                  )}
+                </article>
+              );
               return (
                 <Reveal key={specialty.name} delay={(i % 4) * 70}>
-                  <article className="h-full rounded-2xl border border-mist bg-white p-7 shadow-sm transition-shadow hover:shadow-md">
-                    <span className="w-fit rounded-xl bg-teal/10 p-3 text-teal">
-                      <Icon size={26} />
-                    </span>
-                    <h2 className="mt-4 text-xl font-bold text-ink">{specialty.name}</h2>
-                    <p className="mt-2 text-base text-ink/70">{specialty.blurb}</p>
-                  </article>
+                  {detailPage ? (
+                    <Link href={`/specialties/${detailPage.slug}`} className="block h-full">
+                      {card}
+                    </Link>
+                  ) : (
+                    card
+                  )}
                 </Reveal>
               );
             })}
