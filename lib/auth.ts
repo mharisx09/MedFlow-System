@@ -19,7 +19,7 @@ export interface AdminSession {
 }
 
 export async function getAdminSession() {
-  return getIronSession<AdminSession>(cookies(), sessionOptions);
+  return getIronSession<AdminSession>(await cookies(), sessionOptions);
 }
 
 /**

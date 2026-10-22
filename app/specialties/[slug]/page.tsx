@@ -10,18 +10,20 @@ export function generateStaticParams() {
   return specialtyPages.map((s) => ({ slug: s.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const page = specialtyPages.find((s) => s.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const page = specialtyPages.find((s) => s.slug === slug);
   if (!page) return { title: 'Specialty | Med Flow System' };
   return {
     title: `${page.title} | Med Flow System`,
     description: page.metaDescription,
-    alternates: { canonical: `${siteUrl}/specialties/${params.slug}` },
+    alternates: { canonical: `${siteUrl}/specialties/${slug}` },
   };
 }
 
-export default function SpecialtyDetailPage({ params }: { params: { slug: string } }) {
-  const page = specialtyPages.find((s) => s.slug === params.slug);
+export default async function SpecialtyDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const page = specialtyPages.find((s) => s.slug === slug);
   if (!page) notFound();
 
   const Icon = specialtyIcons[page.name] ?? Stethoscope;

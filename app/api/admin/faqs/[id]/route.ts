@@ -14,7 +14,7 @@ const FaqPatchSchema = z
 
 export async function PATCH(
   req: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     await requireAdmin();
@@ -35,13 +35,14 @@ export async function PATCH(
     return NextResponse.json({ error: 'Please check the form fields.' }, { status: 400 });
   }
 
-  await prisma.faq.update({ where: { id: params.id }, data: parsed.data });
+  const { id } = await params;
+  await prisma.faq.update({ where: { id }, data: parsed.data });
   return NextResponse.json({ ok: true });
 }
 
 export async function DELETE(
   _req: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     await requireAdmin();
@@ -50,6 +51,7 @@ export async function DELETE(
     throw res;
   }
 
-  await prisma.faq.delete({ where: { id: params.id } });
+  const { id } = await params;
+  await prisma.faq.delete({ where: { id } });
   return NextResponse.json({ ok: true });
 }

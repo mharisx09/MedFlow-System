@@ -9,18 +9,20 @@ export function generateStaticParams() {
   return services.map((service) => ({ slug: service.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const service = services.find((s) => s.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const service = services.find((s) => s.slug === slug);
   if (!service) return { title: 'Service | Med Flow System' };
   return {
     title: `${service.title} | Med Flow System`,
     description: service.short,
-    alternates: { canonical: `${siteUrl}/services/${params.slug}` },
+    alternates: { canonical: `${siteUrl}/services/${slug}` },
   };
 }
 
-export default function ServiceDetailPage({ params }: { params: { slug: string } }) {
-  const service = services.find((s) => s.slug === params.slug);
+export default async function ServiceDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const service = services.find((s) => s.slug === slug);
   if (!service) notFound();
 
   const Icon = serviceIcons[service.slug] ?? FileCheck2;

@@ -15,7 +15,7 @@ const PostPatchSchema = z
 
 export async function PATCH(
   req: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     await requireAdmin();
@@ -42,13 +42,14 @@ export async function PATCH(
     ...(excerpt !== undefined ? { excerpt: excerpt || null } : {}),
   };
 
-  await prisma.post.update({ where: { id: params.id }, data });
+  const { id } = await params;
+  await prisma.post.update({ where: { id }, data });
   return NextResponse.json({ ok: true });
 }
 
 export async function DELETE(
   _req: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     await requireAdmin();
@@ -57,6 +58,7 @@ export async function DELETE(
     throw res;
   }
 
-  await prisma.post.delete({ where: { id: params.id } });
+  const { id } = await params;
+  await prisma.post.delete({ where: { id } });
   return NextResponse.json({ ok: true });
 }
