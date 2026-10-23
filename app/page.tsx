@@ -27,17 +27,6 @@ export const metadata = {
     'Med Flow System provides medical billing, coding, denial management, and full revenue cycle support for US healthcare providers. Free billing audit available.',
 };
 
-const tickerItems = [
-  'Medical Billing',
-  'Denial Management',
-  'AR Follow-Up',
-  'Eligibility Verification',
-  'Medical Coding',
-  'Provider Credentialing',
-  'Prior Authorization',
-  'Payment Posting',
-];
-
 const trustItems = [
   { icon: ShieldCheck, title: 'HIPAA-compliant processes', text: 'Your data is handled with care at every step.' },
   { icon: Building2, title: 'US-based practices served', text: 'Built around how American practices actually work.' },
@@ -95,20 +84,28 @@ export default async function HomePage() {
   return (
     <main>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-mist">
-        <div aria-hidden className="pointer-events-none absolute inset-0">
-          <div className="animate-blob absolute -left-24 -top-24 h-96 w-96 rounded-full bg-teal/20 blur-3xl" />
-          <div
-            className="animate-blob absolute -bottom-32 -right-16 h-[28rem] w-[28rem] rounded-full bg-navy/15 blur-3xl"
-            style={{ animationDelay: '3s' }}
-          />
-        </div>
-        <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-24">
-          <div>
-            <h1 className="text-4xl font-extrabold leading-tight text-ink sm:text-5xl">
-              Medical billing that keeps your revenue flowing
+      <section className="relative overflow-hidden bg-ink">
+        <Image
+          src="/images/hero-lady-doctor.webp"
+          alt="Smiling lady doctor standing in a clinic"
+          fill
+          sizes="100vw"
+          className="object-cover object-[50%_12%]"
+          priority
+        />
+        {/* Dark overlay, heavier on the left, so the headline stays easy to read */}
+        <div aria-hidden className="absolute inset-0 bg-gradient-to-r from-ink/85 via-ink/55 to-navy-dark/10" />
+        <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-ink/20" />
+        <div className="relative mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+          <div className="max-w-2xl">
+            <span className="inline-flex items-center gap-2.5 rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-white backdrop-blur">
+              <span className="h-2 w-2 rounded-full bg-[#4CC9C9]" />
+              Free billing audit available
+            </span>
+            <h1 className="mt-6 text-4xl font-extrabold leading-[1.08] text-white sm:text-5xl lg:text-6xl">
+              Medical billing that keeps your <span className="text-[#4CC9C9]">revenue flowing</span>
             </h1>
-            <p className="mt-5 max-w-xl text-lg text-ink/75">
+            <p className="mt-5 max-w-xl text-lg text-white/85">
               Med Flow System handles your billing, coding, and insurance follow-up end to end,
               so your practice gets paid faster and you get back to patient care.
             </p>
@@ -121,68 +118,20 @@ export default async function HomePage() {
               </Link>
               <Link
                 href="#services"
-                className="rounded-lg border-2 border-navy px-7 py-3 text-base font-bold text-navy transition-all hover:-translate-y-0.5 hover:bg-navy hover:text-white"
+                className="rounded-lg border border-white/60 px-7 py-3.5 text-base font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-white hover:text-ink"
               >
                 Our Services
               </Link>
             </div>
           </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
-              <Image
-                src="/images/hero.webp"
-                alt="Healthcare team working together"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-                priority
-              />
-              <div className="animate-float absolute left-4 top-4 flex items-center gap-2 rounded-xl bg-white/95 px-4 py-2.5 shadow-lg backdrop-blur">
-                <ShieldCheck size={18} className="text-teal" />
-                <span className="text-sm font-bold text-ink">HIPAA-compliant workflows</span>
-              </div>
-              <div className="animate-float-slow absolute bottom-4 right-4 flex items-center gap-2 rounded-xl bg-white/95 px-4 py-2.5 shadow-lg backdrop-blur">
-                <BarChart3 size={18} className="text-teal" />
-                <span className="text-sm font-bold text-ink">Denials worked daily</span>
-              </div>
-            </div>
-        </div>
-      </section>
-
-      {/* Services ticker */}
-      <div className="overflow-hidden bg-navy py-4" aria-hidden="true">
-        <div className="marquee-mask overflow-hidden">
-          <div className="animate-marquee flex w-max">
-            {[0, 1].map((copy) => (
-              <div key={copy} className="flex items-center">
-                {tickerItems.map((item) => (
-                  <span
-                    key={`${copy}-${item}`}
-                    className="flex items-center text-sm font-bold uppercase tracking-[0.2em] text-white/90"
-                  >
-                    <span className="px-6">{item}</span>
-                    <span className="inline-block h-2 w-2 rotate-45 bg-teal" />
-                  </span>
-                ))}
-              </div>
+          <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 border-t border-white/20 pt-6">
+            {trustItems.map((item) => (
+              <span key={item.title} className="flex items-center gap-2 text-sm font-bold text-white">
+                <CheckCircle2 size={18} className="shrink-0 text-[#4CC9C9]" />
+                {item.title}
+              </span>
             ))}
           </div>
-        </div>
-      </div>
-
-      {/* Trust bar */}
-      <section className="border-b border-mist bg-white">
-        <div className="mx-auto grid max-w-7xl gap-6 px-4 py-10 sm:grid-cols-3 sm:px-6 lg:px-8">
-          {trustItems.map((item) => (
-            <Reveal key={item.title} className="flex items-start gap-4">
-              <span className="rounded-xl bg-mist p-3 text-teal">
-                <item.icon size={26} />
-              </span>
-              <div>
-                <h2 className="text-lg font-bold text-ink">{item.title}</h2>
-                <p className="mt-1 text-base text-ink/70">{item.text}</p>
-              </div>
-            </Reveal>
-          ))}
         </div>
       </section>
 
