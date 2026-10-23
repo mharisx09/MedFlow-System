@@ -26,11 +26,11 @@ export default function Header() {
       <div className="mx-auto flex h-24 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex shrink-0 items-center" aria-label="Med Flow System home">
           <Image
-            src="/images/logo.png"
+            src="/images/logo-clean.png"
             alt="Med Flow System logo"
-            width={200}
-            height={200}
-            className="h-20 w-auto"
+            width={2358}
+            height={588}
+            className="h-12 w-auto sm:h-14 lg:h-16"
             priority
           />
         </Link>

@@ -10,12 +10,12 @@ export default function Footer() {
     <footer className="bg-navy text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div>
-          <div className="inline-block rounded-lg bg-white p-2">
+          <div className="inline-block">
             <Image
-              src="/images/logo.png"
+              src="/images/logo-clean-white.png"
               alt="Med Flow System logo"
-              width={200}
-              height={200}
+              width={2358}
+              height={588}
               className="h-14 w-auto"
             />
           </div>
